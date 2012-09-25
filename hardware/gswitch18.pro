@@ -1,6 +1,6 @@
-update=Tue 25 Sep 2012 03:04:11 PM NZST
+update=Wed 26 Sep 2012 09:01:43 AM NZST
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetITyp=0
@@ -11,8 +11,6 @@ LibDir=
 NetType=0
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [pcbnew]
 version=1
 PadDrlX=320
@@ -106,3 +104,5 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=share/library/atmega48p
+[general]
+version=1
