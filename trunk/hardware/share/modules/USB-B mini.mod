@@ -1,11 +1,11 @@
-PCBNEW-LibModule-V1  8/09/2012 9:58:58 p.m.
+PCBNEW-LibModule-V1  Tue 25 Sep 2012 08:20:08 PM NZST
 # encoding utf-8
 $INDEX
-USB-B
+USB-B_mini
 $EndINDEX
-$MODULE USB-B
+$MODULE USB-B_mini
 Po 0 0 0 15 4EE7B9DF 00000000 ~~
-Li USB-B
+Li USB-B_mini
 Sc 00000000
 AR USB-B
 Op 0 0 0
@@ -92,5 +92,5 @@ At SMD N 00888000
 Ne 0 ""
 Po 630 -984
 $EndPAD
-$EndMODULE  USB-B
+$EndMODULE  USB-B_mini
 $EndLIBRARY

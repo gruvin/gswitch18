@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2011-11-27 BZR 3249)-stable date = 8/09/2012 10:44:24 p.m.
+Cmp-Mod V01 Genere par PcbNew le Tue 25 Sep 2012 08:27:17 PM NZST
 
 BeginCmp
 TimeStamp = /4ED087A6;
@@ -11,7 +11,7 @@ BeginCmp
 TimeStamp = /4ED087CB;
 Reference = C2;
 ValeurCmp = 22u;
-IdModule  = SM1206;
+IdModule  = SM1206POL;
 EndCmp
 
 BeginCmp
@@ -64,13 +64,6 @@ IdModule  = TQFP32;
 EndCmp
 
 BeginCmp
-TimeStamp = /4E9128F0;
-Reference = mini;
-ValeurCmp = P4;
-IdModule  = USB-B;
-EndCmp
-
-BeginCmp
 TimeStamp = /504B1AB7;
 Reference = P1;
 ValeurCmp = CONN_6X2;
@@ -89,6 +82,13 @@ TimeStamp = /504B1B34;
 Reference = P3;
 ValeurCmp = CONN_6X2;
 IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /506167D1;
+Reference = P4;
+ValeurCmp = CONN_5;
+IdModule  = USB-B_mini;
 EndCmp
 
 BeginCmp
