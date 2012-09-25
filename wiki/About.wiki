@@ -1,0 +1,34 @@
+#summary About the gSwitch18 Project
+
+= About the gSwitch18 Project =
+
+A friend and I wanted a compact USB game controller interface to provide at least 10 switch inputs. We had experience with Atmel AVR chips and development tools (OS X and Ubuntu Linux) and research soon found us Objective Development's [http://www.obdev.at/products/vusb/index.html V-USB project].
+
+So we started with a [http://www.kicad-pcb.org KiCAD] design ...
+
+[http://gswitch18.googlecode.com/svn/wiki/About.attach/prototype_v1-0-KiCAD.jpg]
+
+... and ended up with a working v1.0 prototype ...
+
+[http://gswitch18.googlecode.com/svn/wiki/About.attach/prototype_v1-0.jpg]
+
+Below we see a screen shot from Windows 7's Game Controller Properties, showing the device in use, with switch 17 in the 'on' state ...
+
+
+[http://gswitch18.googlecode.com/svn/wiki/About.attach/prototype_v1-0-Windows.jpg]
+
+= Details =
+
+Our device uses an ATmega88p clocked at 12MHz, implementing a V-USB powered (bit-bang) USB HID compliant game controller interface.
+
+Since this is an HID compliant 'Game Controller' device, no drivers are required for the host system, which is nice.
+
+We use KiCAD for as our PCB design (EDA suite) because it is completely free (as in free speech _and_ free beer :-) and we've used is very successfully before for another, [http://gruvin9x.googlecode.com larger project]. (We looked at using the ever popular Eagle EDA suite, but it turned out to be way to expensive for that previous project, due to board size -- by just 5mm or something crazy. So glad we were 'forced' to find KiCAD instead. :-D)
+
+We get prototype PCB's made in China, using [http://imall.iteadstudio.com/ ITead Studio]'s [http://imall.iteadstudio.com/open-pcb/pcb-prototyping.html Open PCB prototyping service].
+
+= Make Your Own =
+Please see the Google code 'source' link (above) to gain access to the completely open KiCAD design files and firmware source code.
+
+= Purchase Ready Made =
+Limited, hand built prototype boards will be available at the [http://gruvin9x.com/shop gruvin9X online store]. If you can't find the product there, then please use the store's contact form to inform us of your interest. Thanks.
