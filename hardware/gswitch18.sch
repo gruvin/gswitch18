@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 25 Sep 2012 08:28:44 PM NZST
+EESchema Schematic File Version 2  date Wed 26 Sep 2012 08:32:34 AM NZST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -282,24 +282,24 @@ L CONN_5 P4
 U 1 1 506167D1
 P 1400 2000
 F 0 "P4" V 1350 2000 50  0000 C CNN
-F 1 "CONN_5" V 1450 2000 50  0000 C CNN
+F 1 "USB" V 1450 2000 50  0000 C CNN
 	1    1400 2000
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_6X2 P3
+L CONN_6X2 P2
 U 1 1 504B1B34
 P 6500 4800
-F 0 "P3" H 6500 5150 60  0000 C CNN
+F 0 "P2" H 6500 5150 60  0000 C CNN
 F 1 "CONN_6X2" V 6500 4800 60  0000 C CNN
 	1    6500 4800
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_6X2 P2
+L CONN_6X2 P3
 U 1 1 504B1AC6
 P 6500 4000
-F 0 "P2" H 6500 4350 60  0000 C CNN
+F 0 "P3" H 6500 4350 60  0000 C CNN
 F 1 "CONN_6X2" V 6500 4000 60  0000 C CNN
 	1    6500 4000
 	1    0    0    -1  
@@ -361,29 +361,29 @@ Text Label 6100 3050 2    60   ~ 0
 SW02
 Text Label 6100 2950 2    60   ~ 0
 SW01
-Text Label 5000 5800 0    60   ~ 0
-SW18
-Text Label 5000 5700 0    60   ~ 0
-SW17
-Text Label 5000 5600 0    60   ~ 0
-SW16
-Text Label 5000 5500 0    60   ~ 0
-SW15
-Text Label 5000 5400 0    60   ~ 0
-SW14
-Text Label 5000 5100 0    60   ~ 0
-SW13
 Text Label 5000 4800 0    60   ~ 0
-SW12
+SW18
 Text Label 5000 4700 0    60   ~ 0
-SW11
+SW17
 Text Label 5000 4600 0    60   ~ 0
-SW10
+SW16
 Text Label 5000 4500 0    60   ~ 0
-SW09
+SW15
 Text Label 5000 4400 0    60   ~ 0
-SW08
+SW14
 Text Label 5000 4300 0    60   ~ 0
+SW13
+Text Label 5000 5800 0    60   ~ 0
+SW12
+Text Label 5000 5700 0    60   ~ 0
+SW11
+Text Label 5000 5600 0    60   ~ 0
+SW10
+Text Label 5000 5500 0    60   ~ 0
+SW09
+Text Label 5000 5400 0    60   ~ 0
+SW08
+Text Label 5000 5100 0    60   ~ 0
 SW07
 Text Label 2600 5400 2    60   ~ 0
 SW06

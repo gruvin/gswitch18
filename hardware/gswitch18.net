@@ -1,13 +1,13 @@
-# EESchema Netlist Version 1.1 created  Tue 25 Sep 2012 08:28:49 PM NZST
+# EESchema Netlist Version 1.1 created  Wed 26 Sep 2012 08:32:42 AM NZST
 (
- ( /506167D1 $noname  P4 CONN_5 {Lib=CONN_5}
+ ( /506167D1 $noname  P4 USB {Lib=CONN_5}
   (    1 +5V )
   (    2 N-000028 )
   (    3 N-000010 )
   (    4 ? )
   (    5 GND )
  )
- ( /504B1B34 $noname  P3 CONN_6X2 {Lib=CONN_6X2}
+ ( /504B1B34 $noname  P2 CONN_6X2 {Lib=CONN_6X2}
   (    1 /SW13 )
   (    2 GND )
   (    3 /SW14 )
@@ -21,7 +21,7 @@
   (   11 /SW18 )
   (   12 GND )
  )
- ( /504B1AC6 $noname  P2 CONN_6X2 {Lib=CONN_6X2}
+ ( /504B1AC6 $noname  P3 CONN_6X2 {Lib=CONN_6X2}
   (    1 /SW07 )
   (    2 GND )
   (    3 /SW08 )
@@ -74,17 +74,17 @@
   (    2 /RESET )
  )
  ( /4ECC4939 $noname  IC1 ATMEGA88P {Lib=ATMEGA48P}
-  (    1 /SW14 )
-  (    2 /SW15 )
+  (    1 /SW08 )
+  (    2 /SW09 )
   (    3 GND )
   (    4 +5V )
   (    5 GND )
   (    6 +5V )
   (    7 N-000030 )
   (    8 N-000003 )
-  (    9 /SW16 )
-  (   10 /SW17 )
-  (   11 /SW18 )
+  (    9 /SW10 )
+  (   10 /SW11 )
+  (   11 /SW12 )
   (   12 /SW01 )
   (   13 /SW02 )
   (   14 /SW03 )
@@ -96,14 +96,14 @@
   (   20 ? )
   (   21 GND )
   (   22 ? )
-  (   23 /SW07 )
-  (   24 /SW08 )
-  (   25 /SW09 )
-  (   26 /SW10 )
-  (   27 /SW11 )
-  (   28 /SW12 )
+  (   23 /SW13 )
+  (   24 /SW14 )
+  (   25 /SW15 )
+  (   26 /SW16 )
+  (   27 /SW17 )
+  (   28 /SW18 )
   (   29 /RESET )
-  (   30 /SW13 )
+  (   30 /SW07 )
   (   31 /D- )
   (   32 /D+ )
  )
@@ -258,117 +258,117 @@ Net 4 "GND" "GND"
  IC1 5
  IC1 3
  IC1 21
- P3 4
- P3 2
- P4 5
+ P2 4
  P2 2
- P3 12
- P3 10
- P3 8
- P3 6
- C1 2
- C4 2
- C2 2
- P1 12
- P1 10
+ P4 5
+ P3 2
+ P2 12
+ P2 10
+ P2 8
+ P2 6
  P1 8
  P1 6
  P1 4
  P1 2
- P2 12
- P2 10
- P2 8
- P5 6
- D2 1
- P2 6
- P2 4
- D1 1
- D4 1
+ P3 12
+ P3 10
+ P3 8
+ P3 6
+ P3 4
  D3 1
+ D4 1
+ D1 1
+ D2 1
+ P5 6
+ C1 2
+ C4 2
+ C2 2
  C3 2
+ P1 12
+ P1 10
 Net 8 "" ""
  R5 2
  D1 2
- R1 1
  D4 2
+ R1 1
 Net 9 "/MISO" "MISO"
  P5 1
  P1 9
  IC1 16
 Net 10 "" ""
- R1 2
  P4 3
+ R1 2
 Net 11 "/D-" "D-"
- IC1 31
  R6 1
-Net 12 "/SW18" "SW18"
- IC1 11
+ IC1 31
+Net 12 "/SW12" "SW12"
  P3 11
-Net 13 "/SW13" "SW13"
- IC1 30
+ IC1 11
+Net 13 "/SW07" "SW07"
  P3 1
-Net 14 "/SW17" "SW17"
+ IC1 30
+Net 14 "/SW11" "SW11"
  P3 9
  IC1 10
-Net 15 "/SW16" "SW16"
- IC1 9
+Net 15 "/SW10" "SW10"
  P3 7
-Net 16 "/SW15" "SW15"
- IC1 2
+ IC1 9
+Net 16 "/SW09" "SW09"
  P3 5
-Net 17 "/SW14" "SW14"
- P3 3
+ IC1 2
+Net 17 "/SW08" "SW08"
  IC1 1
-Net 18 "/SW12" "SW12"
+ P3 3
+Net 18 "/SW18" "SW18"
  P2 11
  IC1 28
-Net 19 "/SW11" "SW11"
+Net 19 "/SW17" "SW17"
  IC1 27
  P2 9
-Net 20 "/SW10" "SW10"
+Net 20 "/SW16" "SW16"
  P2 7
  IC1 26
-Net 21 "/SW09" "SW09"
- IC1 25
+Net 21 "/SW15" "SW15"
  P2 5
-Net 22 "/SW08" "SW08"
+ IC1 25
+Net 22 "/SW14" "SW14"
  P2 3
  IC1 24
 Net 23 "/SW03" "SW03"
  IC1 14
  P1 5
-Net 24 "/SW07" "SW07"
+Net 24 "/SW13" "SW13"
  P2 1
  IC1 23
 Net 25 "/SW02" "SW02"
  P1 3
  IC1 13
 Net 26 "/D+" "D+"
- R5 1
  IC1 32
+ R5 1
 Net 27 "/SW01" "SW01"
- IC1 12
  P1 1
+ IC1 12
 Net 28 "" ""
  P4 2
  R2 2
 Net 29 "" ""
+ D2 2
  R2 1
  D3 2
- D2 2
- R3 2
  R6 2
+ R3 2
 Net 30 "" ""
  IC1 7
  C4 1
  X1 2
 Net 32 "/SCK" "SCK"
+ P1 11
  P5 3
  IC1 17
- P1 11
 Net 33 "/MOSI" "MOSI"
  IC1 15
- P1 7
  P5 4
+ P1 7
 }
 #End

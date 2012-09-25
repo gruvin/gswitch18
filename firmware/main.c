@@ -100,17 +100,16 @@ int main() {
       td = ~PIND & 0xf9;
 
       reportBuffer.buttonMask0 = 
-          tb                  // SW 1-6, bits 0-5 
-        | ((tc & 0x03)<<6);   // SW 7/8, bits 6-7
+          (tb & 0x3f)         // SW 1-6, bits 0-5 
+        | ((td & 0x01) << 6)  // SW 7, bit 6
+        | ((td & 0x08) << 4); // SW 8, bit 7
 
       reportBuffer.buttonMask1 = 
-          ((tc & 0x3c) >> 2)  // SW 9-12, bits 0-3
-        | ((td & 0x01) << 4)  // SW 13, bit 4
-        | ((td & 0x08) << 2)  // SW 14, bit 5
-        | ((td & 0x30) << 2); // SW 15/16, bits 6-7
+          ((td & 0xf0) >> 4)  // SW 9-12, bits 0-3
+        | ((tc & 0x0f) << 4); // SW 13-16, bits 4-7
 
       reportBuffer.buttonMask2 = 
-          ((td & 0xc0) >> 6); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)
+          ((tc & 0x30) >> 4); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)
 
       usbSetInterrupt((void *)&reportBuffer, sizeof(reportBuffer));
     }
