@@ -15,41 +15,6 @@
 
 #include <util/delay.h>
 
-/*
-PROGMEM const char usbHidReportDescriptor[52] = { // USB report descriptor, size must match usbconfig.h
-    0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
-    0x09, 0x05,                    // USAGE (Mouse=0x02, GamePad=0x05)
-    0xa1, 0x01,                    // COLLECTION (Application)
-    0x09, 0x01,                    //   USAGE (Pointer)
-    0xA1, 0x00,                    //   COLLECTION (Physical)
-    0x05, 0x09,                    //     USAGE_PAGE (Button)
-    0x19, 0x01,                    //     USAGE_MINIMUM
-    0x29, 0x03,                    //     USAGE_MAXIMUM
-    0x15, 0x00,                    //     LOGICAL_MINIMUM (0)
-    0x25, 0x01,                    //     LOGICAL_MAXIMUM (1)
-    0x95, 0x03,                    //     REPORT_COUNT (3)
-    0x75, 0x01,                    //     REPORT_SIZE (1)
-    0x81, 0x02,                    //     INPUT (Data,Var,Abs)
-
-    // pad out the 5 remaining bits of unused buttons (constants)
-    0x95, 0x01,                    //     REPORT_COUNT (1)
-    0x75, 0x05,                    //     REPORT_SIZE (5)
-    0x81, 0x03,                    //     INPUT (Const,Var,Abs)
-
-    0x05, 0x01,                    //     USAGE_PAGE (Generic Desktop)
-    0x09, 0x30,                    //     USAGE (X)
-    0x09, 0x31,                    //     USAGE (Y)
-    0x09, 0x38,                    //     USAGE (Wheel)
-    0x15, 0x81,                    //     LOGICAL_MINIMUM (-127)
-    0x25, 0x7F,                    //     LOGICAL_MAXIMUM (127)
-    0x75, 0x08,                    //     REPORT_SIZE (8)
-    0x95, 0x03,                    //     REPORT_COUNT (3)
-    0x81, 0x06,                    //     INPUT (Data,Var,Rel)
-    0xC0,                          //   END_COLLECTION
-    0xC0,                          // END COLLECTION
-};
-*/
-
 // USB report descriptor, size must match USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH in usbconfig.h
 PROGMEM const char usbHidReportDescriptor[] = {
     0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
@@ -57,25 +22,25 @@ PROGMEM const char usbHidReportDescriptor[] = {
     0xA1, 0x00,                    // COLLECTION (Physical)
     0x05, 0x09,                    //   USAGE_PAGE (Button)
     0x19, 0x01,                    //   USAGE_MINIMUM (button 1)
-    0x29, 0x14,                    //   USAGE_MAXIMUM (button 20)
+    0x29, 0x12,                    //   USAGE_MAXIMUM (button 18)
     0x15, 0x00,                    //   LOGICAL_MINIMUM (0)
     0x25, 0x01,                    //   LOGICAL_MAXIMUM (1)
-    0x95, 0x14,                    //   REPORT_COUNT (20)
+    0x95, 0x12,                    //   REPORT_COUNT (18)
     0x75, 0x01,                    //   REPORT_SIZE (1)
     0x81, 0x02,                    //   INPUT (Data,Var,Abs)
 
-    // pad out remaining 4 bits for missing buttons 21 to 24
-    0x95, 0x01,                    //   REPORT_COUNT (1)
-    0x75, 0x04,                    //   REPORT_SIZE (4)
+    // pad out remaining 6 bits for missing buttons 19 to 24 (18-23 0-based)
+    0x95, 0x06,                    //   REPORT_COUNT (6)
+    0x75, 0x01,                    //   REPORT_SIZE (1)
     0x81, 0x03,                    //   INPUT (Const,Var,Abs)
 
     0xC0                           // END COLLECTION
 };
 
 typedef struct{ // USB 1.1 low speed devices limited to max 8 bytes
-    uchar   buttonMask0; // buttons 0 - 7
-    uchar   buttonMask1; // buttons 8 - 15
-    uchar   buttonMask2; // buttons 16 - 19 (plus 4 unused)
+    uchar   buttonMask0; // buttons 1 - 8
+    uchar   buttonMask1; // buttons 9 - 16
+    uchar   buttonMask2; // buttons 17 - 18 (plus 6 unused, total 24)
 } report_t;
 
 static report_t reportBuffer;
@@ -103,17 +68,11 @@ usbMsgLen_t usbFunctionSetup(uchar data[8]) {
 }
 
 int main() {
-  uchar i, tg, tc, tb;
+  uchar i, tb, tc, td;
 
-  // Set up I/O port data directions and initial states
-  // G9X v4.x PCB being used as devlopment platform for now
-  DDRA = 0xff;  PORTA = 0x00; // LCD data
-  DDRB = 0;     PORTB = 0x30; // pull-ups for Train_Sw and IDL2
-  DDRC = 0x3f;  PORTC = 0xc0; // 7:AilDR_Sw, 6:EleDr_Sw, LCD[5,4,3,2,1], 0:LED_back-light
-  DDRL = 0x80;  PORTL = 0x7f; // 7: Hold_PWR_On (1=On, default Off), 6:Jack_Presence_TTL, 5-0: User Button inputs
-  DDRE = 0x04;  PORTE = 0x04; // Bit 3=BUZZER
-  DDRG = 0;     PORTG = 0x2d; // Pull-ups for RudDr_Sw, TCut_Sw, IDL1_Sw, Gear_Sw
-  DDRJ = 0;     PORTJ = 0xff; // Pull-ups for all trim switches
+  DDRB = 0x3f;  PORTB = 0x3f;
+  DDRC = 0x3f;  PORTC = 0x3f;
+  DDRD = 0xf9;  PORTD = 0xf9;
 
   _delay_us(10000); // let the I/O ports settle
 
@@ -136,22 +95,22 @@ int main() {
 
     if(usbInterruptIsReady()) { // if the interrupt is ready, feed data
 
-      tg = ~PING & 0x2d;
-      tc = ~PINC & 0xc0;
-      tb = ~PINB & 0x30;
+      tb = ~PINB & 0x3f;
+      tc = ~PINC & 0x3f;
+      td = ~PIND & 0xf9;
 
       reportBuffer.buttonMask0 = 
-          ((~tg & 0x04)<<5)    // bit  7 Thr_Cut
-        | ((~tg & 0x01)<<6)    // bit  6 Rud_Sw
-        | ((~tc & 0x40)>>1)    // bit  5 Ele_DR
-        | ((tg & 0x08)<<1)     // bit  4 IDL1
-        | ((tb & 0x10)>>1)     // bit  3 IDL2
-        | ((~tc & 0x80)>>5)    // bit  2 Ail_DR
-        | ((~tg & 0x20)>>4)    // bit  1 Gear_Sw
-        | ((~tb & 0x20)>>5);   // bit  0 Trainer_Sw
+          tb                  // SW 1-6, bits 0-5 
+        | ((tc & 0x03)<<6);   // SW 7/8, bits 6-7
 
-      reportBuffer.buttonMask1 = ~PINJ; // front panel trim switches
-      reportBuffer.buttonMask2 = (~PINL & 0x3f); // front panel key-pad buttons (G9X)
+      reportBuffer.buttonMask1 = 
+          ((tc & 0x3c) >> 2)  // SW 9-12, bits 0-3
+        | ((td & 0x01) << 4)  // SW 13, bit 4
+        | ((td & 0x08) << 2)  // SW 14, bit 5
+        | ((td & 0x30) << 2); // SW 15/16, bits 6-7
+
+      reportBuffer.buttonMask2 = 
+          ((td & 0xc0) >> 6); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)
 
       usbSetInterrupt((void *)&reportBuffer, sizeof(reportBuffer));
     }
