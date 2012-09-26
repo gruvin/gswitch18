@@ -1,2 +1,1 @@
-avrdude -c usbasp -P usb -pm88p -F -U lfuse:w:0xFF:m -U hfuse:w:0xD7:m -U efuse:w:0xFF:m
-
+avrdude -c usbasp -P usb -pm88p -B8 -u -U lfuse:w:0xFF:m -U hfuse:w:0xD7:m -U efuse:w:0xFF:m
