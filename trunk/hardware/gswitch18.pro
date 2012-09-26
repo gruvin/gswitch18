@@ -1,4 +1,4 @@
-update=Wed 26 Sep 2012 09:01:43 AM NZST
+update=26/09/2012 10:10:54 p.m.
 version=1
 last_client=kicad
 [cvpcb]

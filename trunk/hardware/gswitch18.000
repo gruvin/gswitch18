@@ -1,4 +1,4 @@
-PCBNEW-BOARD Version 1 date Wed 26 Sep 2012 03:21:05 PM NZST
+PCBNEW-BOARD Version 1 date Wed 26 Sep 2012 03:22:46 PM NZST
 
 # Created by Pcbnew(2012-01-19 BZR 3256)-stable
 
@@ -60,7 +60,7 @@ PadDrill 0
 Pad2MaskClearance 100
 GridOrigin 29988 19996
 AuxiliaryAxisOrg 0 0
-PcbPlotParams (pcbplotparams (layerselection 2097152) (usegerberextensions true) (excludeedgelayer false) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue true) (plotothertext true) (plotinvisibletext true) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 2) (mirror false) (drillshape 1) (scaleselection 4) (outputdirectory ""))
+PcbPlotParams (pcbplotparams (layerselection 335314945) (usegerberextensions true) (excludeedgelayer true) (linewidth 60) (plotframeref false) (viasonmask false) (mode 1) (useauxorigin false) (hpglpennumber 1) (hpglpenspeed 20) (hpglpendiameter 15) (hpglpenoverlay 0) (pscolor true) (psnegative false) (psa4output false) (plotreference true) (plotvalue false) (plotothertext true) (plotinvisibletext false) (padsonsilk false) (subtractmaskfromsilk false) (outputformat 1) (mirror false) (drillshape 1) (scaleselection 1) (outputdirectory production/))
 $EndSETUP
 
 $EQUIPOT
