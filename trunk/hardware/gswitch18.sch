@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 26 Sep 2012 08:32:34 AM NZST
+EESchema Schematic File Version 2  date Wed 26 Sep 2012 02:15:03 PM NZST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ encoding utf-8
 Sheet 1 1
 Title "G9X USB Programmer"
 Date "25 sep 2012"
-Rev "1.0"
+Rev "1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
