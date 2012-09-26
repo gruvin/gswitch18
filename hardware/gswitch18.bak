@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Wed 26 Sep 2012 08:28:47 AM NZST
+EESchema Schematic File Version 2  date Wed 26 Sep 2012 08:32:34 AM NZST
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -282,7 +282,7 @@ L CONN_5 P4
 U 1 1 506167D1
 P 1400 2000
 F 0 "P4" V 1350 2000 50  0000 C CNN
-F 1 "CONN_5" V 1450 2000 50  0000 C CNN
+F 1 "USB" V 1450 2000 50  0000 C CNN
 	1    1400 2000
 	-1   0    0    -1  
 $EndComp
