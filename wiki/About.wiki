@@ -2,7 +2,9 @@
 
 = About the gSwitch18 Project =
 
-A friend and I wanted a compact USB game controller interface to provide at least 10 switch inputs. We had experience with Atmel AVR chips and development tools (OS X and Ubuntu Linux) and research soon found us Objective Development's [http://www.obdev.at/products/vusb/index.html V-USB project].
+A friend and I wanted a compact USB game controller interface to provide at least 10 switch inputs -- primarily for use with MS Flight Sim X.
+
+We had experience with Atmel AVR chips and development tools (OS X and Ubuntu Linux) and research soon found us Objective Development's [http://www.obdev.at/products/vusb/index.html V-USB project].
 
 So we started with a [http://www.kicad-pcb.org KiCAD] design ...
 
