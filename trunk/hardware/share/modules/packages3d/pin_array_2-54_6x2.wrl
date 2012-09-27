@@ -5,8 +5,8 @@ DEF master_copy17 Transform {
     Shape {
       appearance Appearance {
         material DEF black Material {
-          diffuseColor 0.05261649353233831 0.05428 0.04631893333333335
-          emissiveColor 0.0 0.0 0.0
+          diffuseColor 0.2 0.19999967741987512 0.19999967741987512
+          emissiveColor 0.001 0.001 0.001
           specularColor 0.38728 0.38728 0.38728
           ambientIntensity 0.765743861823362
           transparency 0.0
@@ -124,7 +124,7 @@ DEF master_copy17 Transform {
     Shape {
       appearance Appearance {
         material DEF gold Material {
-          diffuseColor 1.0 0.9533333333333334 0.21333333333333337
+          diffuseColor 1.0 0.9533333333333334 0.6
           emissiveColor 0.001 0.001 0.001
           specularColor 1.0 1.0 1.0
           ambientIntensity 0.6441271592991465
