@@ -70,9 +70,9 @@ usbMsgLen_t usbFunctionSetup(uchar data[8]) {
 int main() {
   uchar i, tb, tc, td;
 
-  DDRB = 0x3f;  PORTB = 0x3f;
-  DDRC = 0x3f;  PORTC = 0x3f;
-  DDRD = 0xf9;  PORTD = 0xf9;
+  DDRB = 0x00;  PORTB = 0x3f;
+  DDRC = 0x00;  PORTC = 0x3f;
+  DDRD = 0x00;  PORTD = 0xf9;
 
   _delay_us(10000); // let the I/O ports settle
 
