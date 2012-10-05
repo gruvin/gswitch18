@@ -25,12 +25,12 @@ Our device uses an ATmega88p clocked at 12MHz, implementing a V-USB powered (bit
 
 Since this is an HID compliant 'Game Controller' device, no drivers are required for the host system, which is nice.
 
-We use KiCAD for as our PCB design (EDA suite) because it is completely free (as in free speech _and_ free beer :-) and we've used is very successfully before for another, [http://gruvin9x.googlecode.com larger project]. (We looked at using the ever popular Eagle EDA suite, but it turned out to be way to expensive for that previous project, due to board size -- by just 5mm or something crazy. So glad we were 'forced' to find KiCAD instead. :-D)
+We use KiCAD for as our PCB design (EDA suite) because it is completely free (as in 'speech' _and_ 'beer') and we had used it very successfully before, for another [http://gruvin9x.googlecode.com larger project].
 
-We get prototype PCB's made in China, using [http://imall.iteadstudio.com/ ITead Studio]'s [http://imall.iteadstudio.com/open-pcb/pcb-prototyping.html Open PCB prototyping service].
+We get production quality "prototype" PCB's made in China, using [http://imall.iteadstudio.com/ ITead Studio]'s [http://imall.iteadstudio.com/open-pcb/pcb-prototyping.html Open PCB prototyping service]. These are high quality, fully clear routed, masked and silk-screened, all at a fraction the price of bare copper, no mask, no silk-screen prototype boards from, 'the West' and yet also just a fraction the price!
 
 = Make Your Own =
 Please see the Google code 'source' link (above) to gain access to the completely open KiCAD design files and firmware source code.
 
-= Purchase Ready Made =
-Limited, hand built prototype boards will be available at the [http://gruvin9x.com/shop gruvin9X online store]. If you can't find the product there, then please use the store's contact form to inform us of your interest. Thanks.
+= Buy Ready Made =
+Hand built boards are now available at the [http://gruvin9x.com/shop gruvin9X online store], in the 'gizmo' section.
