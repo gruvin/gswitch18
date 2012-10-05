@@ -1,0 +1,374 @@
+# EESchema Netlist Version 1.1 created  Wed 26 Sep 2012 08:32:42 AM NZST
+(
+ ( /506167D1 $noname  P4 USB {Lib=CONN_5}
+  (    1 +5V )
+  (    2 N-000028 )
+  (    3 N-000010 )
+  (    4 ? )
+  (    5 GND )
+ )
+ ( /504B1B34 $noname  P2 CONN_6X2 {Lib=CONN_6X2}
+  (    1 /SW13 )
+  (    2 GND )
+  (    3 /SW14 )
+  (    4 GND )
+  (    5 /SW15 )
+  (    6 GND )
+  (    7 /SW16 )
+  (    8 GND )
+  (    9 /SW17 )
+  (   10 GND )
+  (   11 /SW18 )
+  (   12 GND )
+ )
+ ( /504B1AC6 $noname  P3 CONN_6X2 {Lib=CONN_6X2}
+  (    1 /SW07 )
+  (    2 GND )
+  (    3 /SW08 )
+  (    4 GND )
+  (    5 /SW09 )
+  (    6 GND )
+  (    7 /SW10 )
+  (    8 GND )
+  (    9 /SW11 )
+  (   10 GND )
+  (   11 /SW12 )
+  (   12 GND )
+ )
+ ( /504B1AB7 $noname  P1 CONN_6X2 {Lib=CONN_6X2}
+  (    1 /SW01 )
+  (    2 GND )
+  (    3 /SW02 )
+  (    4 GND )
+  (    5 /SW03 )
+  (    6 GND )
+  (    7 /MOSI )
+  (    8 GND )
+  (    9 /MISO )
+  (   10 GND )
+  (   11 /SCK )
+  (   12 GND )
+ )
+ ( /4ED087CB $noname  C2 22u {Lib=CAPAPOL}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4ED087A6 $noname  C1 0u1 {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4ECC4B64 $noname  C3 18p {Lib=C}
+  (    1 N-000003 )
+  (    2 GND )
+ )
+ ( /4ECC4B5C $noname  C4 18p {Lib=C}
+  (    1 N-000030 )
+  (    2 GND )
+ )
+ ( /4ECC4B2B $noname  X1 12MHz {Lib=CRYSTAL}
+  (    1 N-000003 )
+  (    2 N-000030 )
+ )
+ ( /4ECC49EE $noname  R7 5K6 {Lib=R}
+  (    1 +5V )
+  (    2 /RESET )
+ )
+ ( /4ECC4939 $noname  IC1 ATMEGA88P {Lib=ATMEGA48P}
+  (    1 /SW08 )
+  (    2 /SW09 )
+  (    3 GND )
+  (    4 +5V )
+  (    5 GND )
+  (    6 +5V )
+  (    7 N-000030 )
+  (    8 N-000003 )
+  (    9 /SW10 )
+  (   10 /SW11 )
+  (   11 /SW12 )
+  (   12 /SW01 )
+  (   13 /SW02 )
+  (   14 /SW03 )
+  (   15 /MOSI )
+  (   16 /MISO )
+  (   17 /SCK )
+  (   18 +5V )
+  (   19 ? )
+  (   20 ? )
+  (   21 GND )
+  (   22 ? )
+  (   23 /SW13 )
+  (   24 /SW14 )
+  (   25 /SW15 )
+  (   26 /SW16 )
+  (   27 /SW17 )
+  (   28 /SW18 )
+  (   29 /RESET )
+  (   30 /SW07 )
+  (   31 /D- )
+  (   32 /D+ )
+ )
+ ( /4ECB2EE0 $noname  P5 ISP {Lib=CONN_6}
+  (    1 /MISO )
+  (    2 +5V )
+  (    3 /SCK )
+  (    4 /MOSI )
+  (    5 /RESET )
+  (    6 GND )
+ )
+ ( /4E912A5F $noname  D2 Sctky {Lib=DIODE}
+  (    1 GND )
+  (    2 N-000029 )
+ )
+ ( /4E912A59 $noname  D1 Sctky {Lib=DIODE}
+  (    1 GND )
+  (    2 N-000008 )
+ )
+ ( /4E912A4B $noname  D4 3.6v_Zen {Lib=ZENER}
+  (    1 GND )
+  (    2 N-000008 )
+ )
+ ( /4E912A33 $noname  D3 3.6v_Zen {Lib=ZENER}
+  (    1 GND )
+  (    2 N-000029 )
+ )
+ ( /4E912987 $noname  R5 47R {Lib=R}
+  (    1 /D+ )
+  (    2 N-000008 )
+ )
+ ( /4E91297A $noname  R6 47R {Lib=R}
+  (    1 /D- )
+  (    2 N-000029 )
+ )
+ ( /4E91296B $noname  R3 3K9 {Lib=R}
+  (    1 +5V )
+  (    2 N-000029 )
+ )
+ ( /4E912959 $noname  R1 27R {Lib=R}
+  (    1 N-000008 )
+  (    2 N-000010 )
+ )
+ ( /4E91294D $noname  R2 27R {Lib=R}
+  (    1 N-000029 )
+  (    2 N-000028 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C2
+ CP*
+ SM*
+$endlist
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component D4
+ D?
+ SO*
+ SM*
+$endlist
+$component D3
+ D?
+ SO*
+ SM*
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "+5V" "+5V"
+ C1 1
+ C2 1
+ P5 2
+ R3 1
+ IC1 6
+ IC1 4
+ IC1 18
+ P4 1
+ R7 1
+Net 2 "/RESET" "RESET"
+ R7 2
+ IC1 29
+ P5 5
+Net 3 "" ""
+ IC1 8
+ X1 1
+ C3 1
+Net 4 "GND" "GND"
+ IC1 5
+ IC1 3
+ IC1 21
+ P2 4
+ P2 2
+ P4 5
+ P3 2
+ P2 12
+ P2 10
+ P2 8
+ P2 6
+ P1 8
+ P1 6
+ P1 4
+ P1 2
+ P3 12
+ P3 10
+ P3 8
+ P3 6
+ P3 4
+ D3 1
+ D4 1
+ D1 1
+ D2 1
+ P5 6
+ C1 2
+ C4 2
+ C2 2
+ C3 2
+ P1 12
+ P1 10
+Net 8 "" ""
+ R5 2
+ D1 2
+ D4 2
+ R1 1
+Net 9 "/MISO" "MISO"
+ P5 1
+ P1 9
+ IC1 16
+Net 10 "" ""
+ P4 3
+ R1 2
+Net 11 "/D-" "D-"
+ R6 1
+ IC1 31
+Net 12 "/SW12" "SW12"
+ P3 11
+ IC1 11
+Net 13 "/SW07" "SW07"
+ P3 1
+ IC1 30
+Net 14 "/SW11" "SW11"
+ P3 9
+ IC1 10
+Net 15 "/SW10" "SW10"
+ P3 7
+ IC1 9
+Net 16 "/SW09" "SW09"
+ P3 5
+ IC1 2
+Net 17 "/SW08" "SW08"
+ IC1 1
+ P3 3
+Net 18 "/SW18" "SW18"
+ P2 11
+ IC1 28
+Net 19 "/SW17" "SW17"
+ IC1 27
+ P2 9
+Net 20 "/SW16" "SW16"
+ P2 7
+ IC1 26
+Net 21 "/SW15" "SW15"
+ P2 5
+ IC1 25
+Net 22 "/SW14" "SW14"
+ P2 3
+ IC1 24
+Net 23 "/SW03" "SW03"
+ IC1 14
+ P1 5
+Net 24 "/SW13" "SW13"
+ P2 1
+ IC1 23
+Net 25 "/SW02" "SW02"
+ P1 3
+ IC1 13
+Net 26 "/D+" "D+"
+ IC1 32
+ R5 1
+Net 27 "/SW01" "SW01"
+ P1 1
+ IC1 12
+Net 28 "" ""
+ P4 2
+ R2 2
+Net 29 "" ""
+ D2 2
+ R2 1
+ D3 2
+ R6 2
+ R3 2
+Net 30 "" ""
+ IC1 7
+ C4 1
+ X1 2
+Net 32 "/SCK" "SCK"
+ P1 11
+ P5 3
+ IC1 17
+Net 33 "/MOSI" "MOSI"
+ IC1 15
+ P5 4
+ P1 7
+}
+#End
