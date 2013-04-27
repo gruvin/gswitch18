@@ -15,6 +15,9 @@
 
 #include <util/delay.h>
 
+#define USBDEV_SHARED_VENDOR    0x16C0  /* VOTI */
+#define USBDEV_SHARED_PRODUCT   0x27DC  /* Obdev's free shared PID for use with Koystick class HID devicesv */
+
 // USB report descriptor, size must match USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH in usbconfig.h
 PROGMEM const char usbHidReportDescriptor[] = {
     0x05, 0x01,                    // USAGE_PAGE (Generic Desktop)
