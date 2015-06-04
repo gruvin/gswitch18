@@ -3,9 +3,7 @@
 This project implements a USB 'Game Controller' with 18 switch (or button) interface ports, intended 
 for use with PC flight simulators, to give additional inputs for external control panels.
 
-No drivers required. Image below shows Windows 7 Game Controller Settings / Properties ...
-
-![](images/prototype_v1-0-Windows.jpg)
+No drivers required. 
 
 # About This Project
 
@@ -23,15 +21,15 @@ So, I started with a [KiCAD](http://www.kicad-pcb.org) design ...
 
 ![](images/prototype_v1-0.jpg)
 
-Below we see a screen shot from Windows 7's Game Controller Properties, showing
-the device in use, with switch 17 in the 'on' state ...
-
+The image below shows Windows 7 Game Controller Settings / Properties ...
 
 ![](images/prototype_v1-0-Windows.jpg)
 
+Of course, multipleor even all buttons can be used at once.
+
 # Implementation Summary
 
-Our device uses an ATmega88p clocked at 12MHz, implementing a V-USB powered
+This board uses an ATmega88p clocked at 12MHz, implementing a V-USB powered
 (bit-bang) USB HID compliant game controller interface.
 
 Since this is an HID compliant 'Game Controller' device, no drivers are
