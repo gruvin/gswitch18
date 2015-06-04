@@ -9,9 +9,6 @@ No drivers required. Image below shows Windows 7 Game Controller Settings / Prop
 
 ![](images/prototype_v1-0-Windows.jpg)
 
-Made to order and tested units [available for purchase](http://gruvin9x.com/shop/electronics/23-gswitch18-usb-switch-game-controller.html) at
-the [gruvin9X online store](http://gruvin9x.com/).
-
 # About This Project
 
 A friend and I wanted a compact USB game controller interface, to provide at
@@ -54,4 +51,8 @@ from, 'the West' and yet also just a fraction the price!
 
 # Make Your Own
 All the design files for the PCB and the Atmel AVR source code are here. go for it! :-)
+
+# Buy One
+Made to order and tested units [available for purchase](http://gruvin9x.com/shop/electronics/23-gswitch18-usb-switch-game-controller.html) at
+the [gruvin9X online store](http://gruvin9x.com/).
 
