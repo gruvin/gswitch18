@@ -1,9 +1,7 @@
 # 18 Switch USB HID class 'Game Controller'
 
-![](images/prototype_v1-0.jpg)
-
-Implements a USB 'Game Controller' with 18 switch (or button) interface ports, intended 
-for use with PC flight simulators for additional external control panels etc.
+This project implements a USB 'Game Controller' with 18 switch (or button) interface ports, intended 
+for use with PC flight simulators, to give additional inputs for external control panels.
 
 No drivers required. Image below shows Windows 7 Game Controller Settings / Properties ...
 
