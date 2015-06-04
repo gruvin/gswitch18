@@ -1,4 +1,4 @@
-# 18 Switch Input USB HID class 'Game Controller'
+# 18 Switch USB HID class 'Game Controller'
 
 ![](images/prototype_v1-0.jpg)
 
