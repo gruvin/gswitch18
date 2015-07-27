@@ -46,9 +46,8 @@ fraction the price of bare copper, no mask, no silk-screen prototype boards
 from, 'the West' and yet also just a fraction the price!
 
 # Make Your Own
-All the design files for the PCB and the Atmel AVR source code are here. go for it! :-)
+All the design files for the PCB (KiCAD) and the Atmel AVR source code is here in this Git repository. Go for it! :-)
 
 # Buy One
-Made to order and tested units [available for purchase](http://gruvin9x.com/shop/electronics/23-gswitch18-usb-switch-game-controller.html) at
-the [gruvin9X online store](http://gruvin9x.com/).
+It's probably cheaper and definitely more gratifying to buid your own,  but you can buy a made to order and tested by yours truly here ... [Buy a Readymade gSwitch18](http://gruvinandco.com/shop/gizmos/23-gswitch18-usb-switch-game-controller.html).
 
