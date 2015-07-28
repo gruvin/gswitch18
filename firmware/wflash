@@ -1,0 +1,1 @@
+avrdude -c usbasp -P usb -pm88p -U flash:w:main.hex:i
