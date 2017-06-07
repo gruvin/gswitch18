@@ -47,7 +47,3 @@ from, 'the West' and yet also just a fraction the price!
 
 # Make Your Own
 All the design files for the PCB (KiCAD) and the Atmel AVR source code is here in this Git repository. Go for it! :-)
-
-# Buy One
-It's probably cheaper and definitely more gratifying to buid your own,  but you can buy a made to order and tested by yours truly here ... [Buy a Readymade gSwitch18](http://gruvinandco.com/shop/gizmos/23-gswitch18-usb-switch-game-controller.html).
-
