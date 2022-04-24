@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "gswitch18-rescue")(type "Legacy")(uri "${KIPRJMOD}/gswitch18-rescue.lib")(options "")(descr ""))
+  (lib (name "atmega48p")(type "Legacy")(uri "${KIPRJMOD}/share/library/atmega48p.lib")(options "")(descr ""))
+)
