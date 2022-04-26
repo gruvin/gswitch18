@@ -33,9 +33,9 @@
         "other_text_thickness": 0.30479999999999996,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.2,
-          "height": 6.4,
-          "width": 6.4
+          "drill": 0.6,
+          "height": 1.4224,
+          "width": 1.4224
         },
         "silk_line_width": 0.15239999999999998,
         "silk_text_italic": false,
@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -124,10 +124,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 1.5,
-          "drill": 0.8
         }
       ],
       "zones_allow_external_fillets": false,
