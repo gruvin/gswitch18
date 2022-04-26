@@ -33,9 +33,9 @@
         "other_text_thickness": 0.30479999999999996,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.6,
-          "height": 1.4224,
-          "width": 1.4224
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.15239999999999998,
         "silk_text_italic": false,
@@ -45,10 +45,16 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.3
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -108,11 +114,22 @@
         "min_through_hole_diameter": 0.39877999999999997,
         "min_track_width": 0.35,
         "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 1.2,
+        "min_via_diameter": 0.7999999999999999,
         "use_height_for_length_calcs": true
       },
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 1.5,
+          "drill": 0.8
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
