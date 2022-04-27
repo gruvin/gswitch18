@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/Users/bryan/projects/gswitch18/hardware/gswitch18.kicad_sch</source>
+    <date>Wednesday, 27 April 2022 at 11:35:03 pm</date>
+    <tool>Eeschema (6.0.4-0)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>G9X USB Programmer</title>
+        <company/>
+        <rev>1.1</rev>
+        <date>25 sep 2012</date>
+        <source>gswitch18.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0u1</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c2fd4927-8431-4c85-b75d-1336c8306cc2</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>0u1</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ed087a6</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>18p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C107040</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB" value="C107040"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ecc4b64</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>18p</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C107040</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="JLCPCB" value="C107040"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ecc4b5c</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>10u tant.</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C128254</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="JLCPCB" value="C128254"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a424e5ab-9cfc-4bb8-a430-30011c17f1e2</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>Sctky</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <fields>
+        <field name="JLCPCB">C122862</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="JLCPCB" value="C122862"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912a59</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>Sctky</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <fields>
+        <field name="JLCPCB">C122862</field>
+      </fields>
+      <libsource lib="" part="D_Schottky_1" description="Schottky diode"/>
+      <property name="JLCPCB" value="C122862"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912a5f</tstamps>
+    </comp>
+    <comp ref="D3">
+      <value>3V6</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="JLCPCB">C216708</field>
+      </fields>
+      <libsource lib="" part="D_Zener_1" description="Zener diode"/>
+      <property name="JLCPCB" value="C216708"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912a33</tstamps>
+    </comp>
+    <comp ref="D4">
+      <value>3V6</value>
+      <footprint>Diode_SMD:D_SOD-123</footprint>
+      <fields>
+        <field name="JLCPCB">C216708</field>
+      </fields>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
+      <property name="JLCPCB" value="C216708"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912a4b</tstamps>
+    </comp>
+    <comp ref="P1">
+      <value>JST GHS 1.25</value>
+      <footprint>Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</footprint>
+      <fields>
+        <field name="JLCPCB">C519164</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x07" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="JLCPCB" value="C519164"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb1ef16d-df6b-4893-8902-e48ac40eb1be</tstamps>
+    </comp>
+    <comp ref="P2">
+      <value>JST GHS 1.25</value>
+      <footprint>Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</footprint>
+      <fields>
+        <field name="JLCPCB">C519164</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x07" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="JLCPCB" value="C519164"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7eaebf4f-75c6-430b-a5eb-94f17a452ddd</tstamps>
+    </comp>
+    <comp ref="P3">
+      <value>JST GHS 1.25</value>
+      <footprint>Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical</footprint>
+      <fields>
+        <field name="JLCPCB">C519164</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x07" description="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="JLCPCB" value="C519164"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9d9052ed-9220-49b7-8851-8f865f812950</tstamps>
+    </comp>
+    <comp ref="P4">
+      <value>USB_B_Mini</value>
+      <footprint>Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal</footprint>
+      <fields>
+        <field name="JLCPCB">C2681563</field>
+      </fields>
+      <libsource lib="Connector" part="USB_B_Mini" description="USB Mini Type B connector"/>
+      <property name="JLCPCB" value="C2681563"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5afebbad-e0db-426b-8906-9db35157bf68</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>27R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C137753</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C137753"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e91294d</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>27R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C137753</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C137753"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912959</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>3K9</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C114616</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C114616"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e91296b</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C114623</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C114623"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e912987</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>47R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C114623</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C114623"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004e91297a</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>5K6</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="JLCPCB">C114627</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="JLCPCB" value="C114627"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ecc49ee</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>ATMEGA88P</value>
+      <footprint>Package_QFP:TQFP-32_7x7mm_P0.8mm</footprint>
+      <fields>
+        <field name="JLCPCB">C8727</field>
+      </fields>
+      <libsource lib="atmega48p" part="ATMEGA48P" description=""/>
+      <property name="JLCPCB" value="C8727"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ecc4939</tstamps>
+    </comp>
+    <comp ref="X1">
+      <value>12MHz</value>
+      <footprint>Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm</footprint>
+      <fields>
+        <field name="JLCPCB">C258939</field>
+      </fields>
+      <libsource lib="Device" part="Crystal_GND24" description="Four pin crystal, GND on pins 2 and 4"/>
+      <property name="JLCPCB" value="C258939"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gswitch18.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00004ecc4b2b</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="D_Schottky_1">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_1</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="D_Zener_1">
+      <description>Zener diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D3</field>
+        <field name="Value">D_Zener_1</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="JLCPCB">C216708</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Female">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Female</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_B_Mini">
+      <description>USB Mini Type B connector</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Mini</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="bidirectional"/>
+        <pin num="3" name="D+" type="bidirectional"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x07">
+      <description>Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x07</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Crystal_GND24">
+      <description>Four pin crystal, GND on pins 2 and 4</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D1</field>
+        <field name="Value">Sctky</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="JLCPCB">C122862</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Zener">
+      <description>Zener diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D4</field>
+        <field name="Value">3V6</field>
+        <field name="Footprint">Diode_SMD:D_SOD-123</field>
+        <field name="JLCPCB">C216708</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="atmega48p" part="ATMEGA48P">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATMEGA48P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PD3" type="bidirectional"/>
+        <pin num="2" name="PD4" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="VCC" type="power_in"/>
+        <pin num="7" name="PB6/XTAL1" type="bidirectional"/>
+        <pin num="8" name="PB7/XTAL_2" type="bidirectional"/>
+        <pin num="9" name="PD5" type="bidirectional"/>
+        <pin num="10" name="PD6" type="bidirectional"/>
+        <pin num="11" name="PD7" type="bidirectional"/>
+        <pin num="12" name="PB0/PCINT0" type="bidirectional"/>
+        <pin num="13" name="PB1/PCINT1" type="bidirectional"/>
+        <pin num="14" name="PB2/ss" type="bidirectional"/>
+        <pin num="15" name="PB3/MOSI" type="bidirectional"/>
+        <pin num="16" name="PB4/MISO" type="bidirectional"/>
+        <pin num="17" name="PB5(SCK)" type="bidirectional"/>
+        <pin num="18" name="AVcc" type="power_in"/>
+        <pin num="19" name="ADC6" type="bidirectional"/>
+        <pin num="20" name="AREF" type="bidirectional"/>
+        <pin num="21" name="GND" type="power_in"/>
+        <pin num="22" name="ADC7" type="bidirectional"/>
+        <pin num="23" name="PC0" type="bidirectional"/>
+        <pin num="24" name="PC1" type="bidirectional"/>
+        <pin num="25" name="PC2" type="bidirectional"/>
+        <pin num="26" name="PC3" type="bidirectional"/>
+        <pin num="27" name="PC4" type="bidirectional"/>
+        <pin num="28" name="PC5" type="bidirectional"/>
+        <pin num="29" name="PC6/reset/PCINT14" type="bidirectional"/>
+        <pin num="30" name="PD0/RXD" type="bidirectional"/>
+        <pin num="31" name="PD1/TXD" type="bidirectional"/>
+        <pin num="32" name="PD2/INT0" type="bidirectional"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="atmega48p">
+      <uri>/Users/bryan/projects/gswitch18/hardware/share/library/atmega48p.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="P4" pin="1" pinfunction="VBUS" pintype="power_out"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U1" pin="18" pinfunction="AVcc" pintype="power_in"/>
+      <node ref="U1" pin="4" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U1" pin="6" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="/D+">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U1" pin="32" pinfunction="PD2/INT0" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="/D-">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="PD1/TXD" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="/MISO">
+      <node ref="P1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="16" pinfunction="PB4/MISO" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="/MOSI">
+      <node ref="P1" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="15" pinfunction="PB3/MOSI" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="/RESET">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="29" pinfunction="PC6/reset/PCINT14" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="/SCK">
+      <node ref="P1" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="17" pinfunction="PB5(SCK)" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/SW04">
+      <node ref="P1" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="14" pinfunction="PB2/ss" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/SW05">
+      <node ref="P1" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="13" pinfunction="PB1/PCINT1" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="/SW06">
+      <node ref="P1" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="PB0/PCINT0" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="/SW07">
+      <node ref="P2" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PD7" pintype="bidirectional"/>
+    </net>
+    <net code="12" name="/SW08">
+      <node ref="P2" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PD6" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="/SW09">
+      <node ref="P2" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="PD5" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="/SW10">
+      <node ref="P2" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PD4" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="/SW11">
+      <node ref="P2" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="PD3" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="/SW12">
+      <node ref="P2" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="PD0/RXD" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="/SW13">
+      <node ref="P3" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="U1" pin="28" pinfunction="PC5" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="/SW14">
+      <node ref="P3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U1" pin="27" pinfunction="PC4" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="/SW15">
+      <node ref="P3" pin="4" pinfunction="Pin_4" pintype="passive"/>
+      <node ref="U1" pin="26" pinfunction="PC3" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="/SW16">
+      <node ref="P3" pin="5" pinfunction="Pin_5" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="PC2" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="/SW17">
+      <node ref="P3" pin="6" pinfunction="Pin_6" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="PC1" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="/SW18">
+      <node ref="P3" pin="7" pinfunction="Pin_7" pintype="passive"/>
+      <node ref="U1" pin="23" pinfunction="PC0" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="P1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="P2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="P3" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="P4" pin="5" pinfunction="GND" pintype="power_out"/>
+      <node ref="U1" pin="21" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="5" pinfunction="GND" pintype="power_in"/>
+      <node ref="X1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="X1" pin="4" pinfunction="4" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(P4-Pad2)">
+      <node ref="P4" pin="2" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(P4-Pad3)">
+      <node ref="P4" pin="3" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(R1-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(R3-Pad2)">
+      <node ref="D1" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad7)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PB6/XTAL1" pintype="bidirectional"/>
+      <node ref="X1" pin="3" pinfunction="3" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(U1-Pad8)">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PB7/XTAL_2" pintype="bidirectional"/>
+      <node ref="X1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="30" name="unconnected-(P4-Pad4)">
+      <node ref="P4" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(P4-Pad6)">
+      <node ref="P4" pin="6" pinfunction="Shield" pintype="passive+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U1-Pad19)">
+      <node ref="U1" pin="19" pinfunction="ADC6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U1-Pad20)">
+      <node ref="U1" pin="20" pinfunction="AREF" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="34" name="unconnected-(U1-Pad22)">
+      <node ref="U1" pin="22" pinfunction="ADC7" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>
