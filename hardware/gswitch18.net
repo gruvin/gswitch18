@@ -1,374 +1,658 @@
-# EESchema Netlist Version 1.1 created  Wed 26 Sep 2012 08:32:42 AM NZST
-(
- ( /506167D1 $noname  P4 USB {Lib=CONN_5}
-  (    1 +5V )
-  (    2 N-000028 )
-  (    3 N-000010 )
-  (    4 ? )
-  (    5 GND )
- )
- ( /504B1B34 $noname  P2 CONN_6X2 {Lib=CONN_6X2}
-  (    1 /SW13 )
-  (    2 GND )
-  (    3 /SW14 )
-  (    4 GND )
-  (    5 /SW15 )
-  (    6 GND )
-  (    7 /SW16 )
-  (    8 GND )
-  (    9 /SW17 )
-  (   10 GND )
-  (   11 /SW18 )
-  (   12 GND )
- )
- ( /504B1AC6 $noname  P3 CONN_6X2 {Lib=CONN_6X2}
-  (    1 /SW07 )
-  (    2 GND )
-  (    3 /SW08 )
-  (    4 GND )
-  (    5 /SW09 )
-  (    6 GND )
-  (    7 /SW10 )
-  (    8 GND )
-  (    9 /SW11 )
-  (   10 GND )
-  (   11 /SW12 )
-  (   12 GND )
- )
- ( /504B1AB7 $noname  P1 CONN_6X2 {Lib=CONN_6X2}
-  (    1 /SW01 )
-  (    2 GND )
-  (    3 /SW02 )
-  (    4 GND )
-  (    5 /SW03 )
-  (    6 GND )
-  (    7 /MOSI )
-  (    8 GND )
-  (    9 /MISO )
-  (   10 GND )
-  (   11 /SCK )
-  (   12 GND )
- )
- ( /4ED087CB $noname  C2 22u {Lib=CAPAPOL}
-  (    1 +5V )
-  (    2 GND )
- )
- ( /4ED087A6 $noname  C1 0u1 {Lib=C}
-  (    1 +5V )
-  (    2 GND )
- )
- ( /4ECC4B64 $noname  C3 18p {Lib=C}
-  (    1 N-000003 )
-  (    2 GND )
- )
- ( /4ECC4B5C $noname  C4 18p {Lib=C}
-  (    1 N-000030 )
-  (    2 GND )
- )
- ( /4ECC4B2B $noname  X1 12MHz {Lib=CRYSTAL}
-  (    1 N-000003 )
-  (    2 N-000030 )
- )
- ( /4ECC49EE $noname  R7 5K6 {Lib=R}
-  (    1 +5V )
-  (    2 /RESET )
- )
- ( /4ECC4939 $noname  IC1 ATMEGA88P {Lib=ATMEGA48P}
-  (    1 /SW08 )
-  (    2 /SW09 )
-  (    3 GND )
-  (    4 +5V )
-  (    5 GND )
-  (    6 +5V )
-  (    7 N-000030 )
-  (    8 N-000003 )
-  (    9 /SW10 )
-  (   10 /SW11 )
-  (   11 /SW12 )
-  (   12 /SW01 )
-  (   13 /SW02 )
-  (   14 /SW03 )
-  (   15 /MOSI )
-  (   16 /MISO )
-  (   17 /SCK )
-  (   18 +5V )
-  (   19 ? )
-  (   20 ? )
-  (   21 GND )
-  (   22 ? )
-  (   23 /SW13 )
-  (   24 /SW14 )
-  (   25 /SW15 )
-  (   26 /SW16 )
-  (   27 /SW17 )
-  (   28 /SW18 )
-  (   29 /RESET )
-  (   30 /SW07 )
-  (   31 /D- )
-  (   32 /D+ )
- )
- ( /4ECB2EE0 $noname  P5 ISP {Lib=CONN_6}
-  (    1 /MISO )
-  (    2 +5V )
-  (    3 /SCK )
-  (    4 /MOSI )
-  (    5 /RESET )
-  (    6 GND )
- )
- ( /4E912A5F $noname  D2 Sctky {Lib=DIODE}
-  (    1 GND )
-  (    2 N-000029 )
- )
- ( /4E912A59 $noname  D1 Sctky {Lib=DIODE}
-  (    1 GND )
-  (    2 N-000008 )
- )
- ( /4E912A4B $noname  D4 3.6v_Zen {Lib=ZENER}
-  (    1 GND )
-  (    2 N-000008 )
- )
- ( /4E912A33 $noname  D3 3.6v_Zen {Lib=ZENER}
-  (    1 GND )
-  (    2 N-000029 )
- )
- ( /4E912987 $noname  R5 47R {Lib=R}
-  (    1 /D+ )
-  (    2 N-000008 )
- )
- ( /4E91297A $noname  R6 47R {Lib=R}
-  (    1 /D- )
-  (    2 N-000029 )
- )
- ( /4E91296B $noname  R3 3K9 {Lib=R}
-  (    1 +5V )
-  (    2 N-000029 )
- )
- ( /4E912959 $noname  R1 27R {Lib=R}
-  (    1 N-000008 )
-  (    2 N-000010 )
- )
- ( /4E91294D $noname  R2 27R {Lib=R}
-  (    1 N-000029 )
-  (    2 N-000028 )
- )
-)
-*
-{ Allowed footprints by component:
-$component C2
- CP*
- SM*
-$endlist
-$component C1
- SM*
- C?
- C1-1
-$endlist
-$component C3
- SM*
- C?
- C1-1
-$endlist
-$component C4
- SM*
- C?
- C1-1
-$endlist
-$component R7
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component D2
- D?
- S*
-$endlist
-$component D1
- D?
- S*
-$endlist
-$component D4
- D?
- SO*
- SM*
-$endlist
-$component D3
- D?
- SO*
- SM*
-$endlist
-$component R5
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
-{ Pin List by Nets
-Net 1 "+5V" "+5V"
- C1 1
- C2 1
- P5 2
- R3 1
- IC1 6
- IC1 4
- IC1 18
- P4 1
- R7 1
-Net 2 "/RESET" "RESET"
- R7 2
- IC1 29
- P5 5
-Net 3 "" ""
- IC1 8
- X1 1
- C3 1
-Net 4 "GND" "GND"
- IC1 5
- IC1 3
- IC1 21
- P2 4
- P2 2
- P4 5
- P3 2
- P2 12
- P2 10
- P2 8
- P2 6
- P1 8
- P1 6
- P1 4
- P1 2
- P3 12
- P3 10
- P3 8
- P3 6
- P3 4
- D3 1
- D4 1
- D1 1
- D2 1
- P5 6
- C1 2
- C4 2
- C2 2
- C3 2
- P1 12
- P1 10
-Net 8 "" ""
- R5 2
- D1 2
- D4 2
- R1 1
-Net 9 "/MISO" "MISO"
- P5 1
- P1 9
- IC1 16
-Net 10 "" ""
- P4 3
- R1 2
-Net 11 "/D-" "D-"
- R6 1
- IC1 31
-Net 12 "/SW12" "SW12"
- P3 11
- IC1 11
-Net 13 "/SW07" "SW07"
- P3 1
- IC1 30
-Net 14 "/SW11" "SW11"
- P3 9
- IC1 10
-Net 15 "/SW10" "SW10"
- P3 7
- IC1 9
-Net 16 "/SW09" "SW09"
- P3 5
- IC1 2
-Net 17 "/SW08" "SW08"
- IC1 1
- P3 3
-Net 18 "/SW18" "SW18"
- P2 11
- IC1 28
-Net 19 "/SW17" "SW17"
- IC1 27
- P2 9
-Net 20 "/SW16" "SW16"
- P2 7
- IC1 26
-Net 21 "/SW15" "SW15"
- P2 5
- IC1 25
-Net 22 "/SW14" "SW14"
- P2 3
- IC1 24
-Net 23 "/SW03" "SW03"
- IC1 14
- P1 5
-Net 24 "/SW13" "SW13"
- P2 1
- IC1 23
-Net 25 "/SW02" "SW02"
- P1 3
- IC1 13
-Net 26 "/D+" "D+"
- IC1 32
- R5 1
-Net 27 "/SW01" "SW01"
- P1 1
- IC1 12
-Net 28 "" ""
- P4 2
- R2 2
-Net 29 "" ""
- D2 2
- R2 1
- D3 2
- R6 2
- R3 2
-Net 30 "" ""
- IC1 7
- C4 1
- X1 2
-Net 32 "/SCK" "SCK"
- P1 11
- P5 3
- IC1 17
-Net 33 "/MOSI" "MOSI"
- IC1 15
- P5 4
- P1 7
-}
-#End
+(export (version "E")
+  (design
+    (source "/Users/bryan/projects/gswitch18/hardware/gswitch18.kicad_sch")
+    (date "Wednesday, 27 April 2022 at 09:20:20 pm")
+    (tool "Eeschema (6.0.4-0)")
+    (sheet (number "1") (name "/") (tstamps "/")
+      (title_block
+        (title "G9X USB Programmer")
+        (company)
+        (rev "1.1")
+        (date "25 sep 2012")
+        (source "gswitch18.kicad_sch")
+        (comment (number "1") (value ""))
+        (comment (number "2") (value ""))
+        (comment (number "3") (value ""))
+        (comment (number "4") (value ""))
+        (comment (number "5") (value ""))
+        (comment (number "6") (value ""))
+        (comment (number "7") (value ""))
+        (comment (number "8") (value ""))
+        (comment (number "9") (value "")))))
+  (components
+    (comp (ref "C1")
+      (value "0u1")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C14663"))
+      (libsource (lib "gswitch18-rescue") (part "C") (description ""))
+      (property (name "JLCPCB") (value "C14663"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "c2fd4927-8431-4c85-b75d-1336c8306cc2"))
+    (comp (ref "C2")
+      (value "0u1")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C14663"))
+      (libsource (lib "gswitch18-rescue") (part "C") (description ""))
+      (property (name "JLCPCB") (value "C14663"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ed087a6"))
+    (comp (ref "C3")
+      (value "18p")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C107040"))
+      (libsource (lib "gswitch18-rescue") (part "C") (description ""))
+      (property (name "JLCPCB") (value "C107040"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecc4b64"))
+    (comp (ref "C4")
+      (value "18p")
+      (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C107040"))
+      (libsource (lib "gswitch18-rescue") (part "C") (description ""))
+      (property (name "JLCPCB") (value "C107040"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecc4b5c"))
+    (comp (ref "C5")
+      (value "10u tant.")
+      (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (fields
+        (field (name "JLCPCB") "C128254"))
+      (libsource (lib "gswitch18-rescue") (part "CAPAPOL") (description ""))
+      (property (name "JLCPCB") (value "C128254"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "a424e5ab-9cfc-4bb8-a430-30011c17f1e2"))
+    (comp (ref "D1")
+      (value "Sctky")
+      (footprint "Diode_SMD:D_SOD-523")
+      (fields
+        (field (name "JLCPCB") "C122862"))
+      (libsource (lib "gswitch18-rescue") (part "DIODE") (description ""))
+      (property (name "JLCPCB") (value "C122862"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912a59"))
+    (comp (ref "D2")
+      (value "Sctky")
+      (footprint "Diode_SMD:D_SOD-523")
+      (fields
+        (field (name "JLCPCB") "C122862"))
+      (libsource (lib "") (part "DIODE_1") (description ""))
+      (property (name "JLCPCB") (value "C122862"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912a5f"))
+    (comp (ref "D3")
+      (value "3V6")
+      (footprint "Diode_SMD:D_SOD-123")
+      (fields
+        (field (name "JLCPCB") "C216708"))
+      (libsource (lib "gswitch18-rescue") (part "ZENER") (description ""))
+      (property (name "JLCPCB") (value "C216708"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912a33"))
+    (comp (ref "D4")
+      (value "3V6")
+      (footprint "Diode_SMD:D_SOD-123")
+      (fields
+        (field (name "JLCPCB") "C216708"))
+      (libsource (lib "gswitch18-rescue") (part "ZENER") (description ""))
+      (property (name "JLCPCB") (value "C216708"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912a4b"))
+    (comp (ref "MH1")
+      (value "via pad")
+      (footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+      (libsource (lib "") (part "MountingHole_1") (description "Mounting Hole without connection"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (property (name "exclude_from_bom"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "b6df09c2-3956-4cbd-baf8-5fc8e6392775"))
+    (comp (ref "MH2")
+      (value "via pad")
+      (footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+      (libsource (lib "") (part "MountingHole_3") (description "Mounting Hole without connection"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (property (name "exclude_from_bom"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "ec227ac7-0d17-447c-aa7e-e45cf3baa494"))
+    (comp (ref "MH3")
+      (value "via pad")
+      (footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+      (libsource (lib "") (part "MountingHole_4") (description "Mounting Hole without connection"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (property (name "exclude_from_bom"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "3233593f-eafa-4d4b-b926-4b082e886577"))
+    (comp (ref "MH4")
+      (value "via pad")
+      (footprint "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+      (libsource (lib "") (part "MountingHole_2") (description "Mounting Hole without connection"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (property (name "exclude_from_bom"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "505b12e4-f669-4daa-8082-75ba56c7858a"))
+    (comp (ref "P1")
+      (value "JST GHS 1.25")
+      (footprint "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical")
+      (fields
+        (field (name "JLCPCB") "C519164"))
+      (libsource (lib "Connector_Generic") (part "Conn_01x07") (description "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (property (name "JLCPCB") (value "C519164"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "cb1ef16d-df6b-4893-8902-e48ac40eb1be"))
+    (comp (ref "P2")
+      (value "JST GHS 1.25")
+      (footprint "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical")
+      (fields
+        (field (name "JLCPCB") "C519164"))
+      (libsource (lib "Connector_Generic") (part "Conn_01x07") (description "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (property (name "JLCPCB") (value "C519164"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "7eaebf4f-75c6-430b-a5eb-94f17a452ddd"))
+    (comp (ref "P3")
+      (value "JST GHS 1.25")
+      (footprint "Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical")
+      (fields
+        (field (name "JLCPCB") "C519164"))
+      (libsource (lib "Connector_Generic") (part "Conn_01x07") (description "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"))
+      (property (name "JLCPCB") (value "C519164"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "9d9052ed-9220-49b7-8851-8f865f812950"))
+    (comp (ref "P4")
+      (value "USB_B_Mini")
+      (footprint "Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal")
+      (fields
+        (field (name "JLCPCB") "C2681563"))
+      (libsource (lib "Connector") (part "USB_B_Mini") (description "USB Mini Type B connector"))
+      (property (name "JLCPCB") (value "C2681563"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "5afebbad-e0db-426b-8906-9db35157bf68"))
+    (comp (ref "P5")
+      (value "ISP")
+      (footprint "pin_array_3x2")
+      (libsource (lib "gswitch18-rescue") (part "CONN_6") (description ""))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (property (name "exclude_from_bom"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecb2ee0"))
+    (comp (ref "R1")
+      (value "27R")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C137753"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C137753"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e91294d"))
+    (comp (ref "R2")
+      (value "27R")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C137753"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C137753"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912959"))
+    (comp (ref "R3")
+      (value "3K9")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C114616"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C114616"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e91296b"))
+    (comp (ref "R5")
+      (value "47R")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C114623"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C114623"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e912987"))
+    (comp (ref "R6")
+      (value "47R")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C114623"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C114623"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004e91297a"))
+    (comp (ref "R7")
+      (value "5K6")
+      (footprint "Resistor_SMD:R_0603_1608Metric")
+      (fields
+        (field (name "JLCPCB") "C114627"))
+      (libsource (lib "gswitch18-rescue") (part "R") (description ""))
+      (property (name "JLCPCB") (value "C114627"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecc49ee"))
+    (comp (ref "U1")
+      (value "ATMEGA88P")
+      (footprint "Package_QFP:TQFP-32_7x7mm_P0.8mm")
+      (fields
+        (field (name "JLCPCB") "C8727"))
+      (libsource (lib "atmega48p") (part "ATMEGA48P") (description ""))
+      (property (name "JLCPCB") (value "C8727"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecc4939"))
+    (comp (ref "X1")
+      (value "12MHz")
+      (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")
+      (fields
+        (field (name "JLCPCB") "C258939"))
+      (libsource (lib "Device") (part "Crystal_GND24") (description "Four pin crystal, GND on pins 2 and 4"))
+      (property (name "JLCPCB") (value "C258939"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "gswitch18.kicad_sch"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "00000000-0000-0000-0000-00004ecc4b2b")))
+  (libparts
+    (libpart (lib "") (part "DIODE_1")
+      (footprints
+        (fp "D?")
+        (fp "S*"))
+      (fields
+        (field (name "Reference") "D2")
+        (field (name "Value") "Sctky")
+        (field (name "Footprint") "Diode_SMD:D_SOD-523"))
+      (pins
+        (pin (num "1") (name "A") (type "passive"))
+        (pin (num "2") (name "K") (type "passive"))))
+    (libpart (lib "") (part "MountingHole_1")
+      (description "Mounting Hole without connection")
+      (docs "~")
+      (footprints
+        (fp "MountingHole*"))
+      (fields
+        (field (name "Reference") "MH1")
+        (field (name "Value") "MountingHole_1")
+        (field (name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))))
+    (libpart (lib "") (part "MountingHole_2")
+      (description "Mounting Hole without connection")
+      (docs "~")
+      (footprints
+        (fp "MountingHole*"))
+      (fields
+        (field (name "Reference") "MH1")
+        (field (name "Value") "via pad")
+        (field (name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))))
+    (libpart (lib "") (part "MountingHole_3")
+      (description "Mounting Hole without connection")
+      (docs "~")
+      (footprints
+        (fp "MountingHole*"))
+      (fields
+        (field (name "Reference") "MH1")
+        (field (name "Value") "MountingHole_3")
+        (field (name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))))
+    (libpart (lib "") (part "MountingHole_4")
+      (description "Mounting Hole without connection")
+      (docs "~")
+      (footprints
+        (fp "MountingHole*"))
+      (fields
+        (field (name "Reference") "MH1")
+        (field (name "Value") "MountingHole_4")
+        (field (name "Footprint") "MountingHole:MountingHole_3.2mm_M3_Pad_Via")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))))
+    (libpart (lib "Connector") (part "USB_B_Mini")
+      (description "USB Mini Type B connector")
+      (docs "~")
+      (footprints
+        (fp "USB*"))
+      (fields
+        (field (name "Reference") "J")
+        (field (name "Value") "USB_B_Mini")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "VBUS") (type "power_out"))
+        (pin (num "2") (name "D-") (type "bidirectional"))
+        (pin (num "3") (name "D+") (type "bidirectional"))
+        (pin (num "4") (name "ID") (type "passive"))
+        (pin (num "5") (name "GND") (type "power_out"))
+        (pin (num "6") (name "Shield") (type "passive"))))
+    (libpart (lib "Connector_Generic") (part "Conn_01x07")
+      (description "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)")
+      (docs "~")
+      (footprints
+        (fp "Connector*:*_1x??_*"))
+      (fields
+        (field (name "Reference") "J")
+        (field (name "Value") "Conn_01x07")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "Pin_1") (type "passive"))
+        (pin (num "2") (name "Pin_2") (type "passive"))
+        (pin (num "3") (name "Pin_3") (type "passive"))
+        (pin (num "4") (name "Pin_4") (type "passive"))
+        (pin (num "5") (name "Pin_5") (type "passive"))
+        (pin (num "6") (name "Pin_6") (type "passive"))
+        (pin (num "7") (name "Pin_7") (type "passive"))))
+    (libpart (lib "Device") (part "Crystal_GND24")
+      (description "Four pin crystal, GND on pins 2 and 4")
+      (docs "~")
+      (footprints
+        (fp "Crystal*"))
+      (fields
+        (field (name "Reference") "Y")
+        (field (name "Value") "Crystal_GND24")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "1") (type "passive"))
+        (pin (num "2") (name "2") (type "passive"))
+        (pin (num "3") (name "3") (type "passive"))
+        (pin (num "4") (name "4") (type "passive"))))
+    (libpart (lib "atmega48p") (part "ATMEGA48P")
+      (fields
+        (field (name "Reference") "U")
+        (field (name "Value") "ATMEGA48P"))
+      (pins
+        (pin (num "1") (name "PD3") (type "bidirectional"))
+        (pin (num "2") (name "PD4") (type "bidirectional"))
+        (pin (num "3") (name "GND") (type "power_in"))
+        (pin (num "4") (name "VCC") (type "power_in"))
+        (pin (num "5") (name "GND") (type "power_in"))
+        (pin (num "6") (name "VCC") (type "power_in"))
+        (pin (num "7") (name "PB6/XTAL1") (type "bidirectional"))
+        (pin (num "8") (name "PB7/XTAL_2") (type "bidirectional"))
+        (pin (num "9") (name "PD5") (type "bidirectional"))
+        (pin (num "10") (name "PD6") (type "bidirectional"))
+        (pin (num "11") (name "PD7") (type "bidirectional"))
+        (pin (num "12") (name "PB0/PCINT0") (type "bidirectional"))
+        (pin (num "13") (name "PB1/PCINT1") (type "bidirectional"))
+        (pin (num "14") (name "PB2/ss") (type "bidirectional"))
+        (pin (num "15") (name "PB3/MOSI") (type "bidirectional"))
+        (pin (num "16") (name "PB4/MISO") (type "bidirectional"))
+        (pin (num "17") (name "PB5(SCK)") (type "bidirectional"))
+        (pin (num "18") (name "AVcc") (type "power_in"))
+        (pin (num "19") (name "ADC6") (type "bidirectional"))
+        (pin (num "20") (name "AREF") (type "bidirectional"))
+        (pin (num "21") (name "GND") (type "power_in"))
+        (pin (num "22") (name "ADC7") (type "bidirectional"))
+        (pin (num "23") (name "PC0") (type "bidirectional"))
+        (pin (num "24") (name "PC1") (type "bidirectional"))
+        (pin (num "25") (name "PC2") (type "bidirectional"))
+        (pin (num "26") (name "PC3") (type "bidirectional"))
+        (pin (num "27") (name "PC4") (type "bidirectional"))
+        (pin (num "28") (name "PC5") (type "bidirectional"))
+        (pin (num "29") (name "PC6/reset/PCINT14") (type "bidirectional"))
+        (pin (num "30") (name "PD0/RXD") (type "bidirectional"))
+        (pin (num "31") (name "PD1/TXD") (type "bidirectional"))
+        (pin (num "32") (name "PD2/INT0") (type "bidirectional"))))
+    (libpart (lib "gswitch18-rescue") (part "C")
+      (footprints
+        (fp "SM*")
+        (fp "C?")
+        (fp "C1-1"))
+      (fields
+        (field (name "Reference") "C")
+        (field (name "Value") "C"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))
+        (pin (num "2") (name "") (type "passive"))))
+    (libpart (lib "gswitch18-rescue") (part "CAPAPOL")
+      (footprints
+        (fp "CP*")
+        (fp "SM*"))
+      (fields
+        (field (name "Reference") "C")
+        (field (name "Value") "CAPAPOL"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))
+        (pin (num "2") (name "") (type "passive"))))
+    (libpart (lib "gswitch18-rescue") (part "CONN_6")
+      (fields
+        (field (name "Reference") "P")
+        (field (name "Value") "CONN_6"))
+      (pins
+        (pin (num "1") (name "1") (type "passive"))
+        (pin (num "2") (name "2") (type "passive"))
+        (pin (num "3") (name "3") (type "passive"))
+        (pin (num "4") (name "4") (type "passive"))
+        (pin (num "5") (name "5") (type "passive"))
+        (pin (num "6") (name "6") (type "passive"))))
+    (libpart (lib "gswitch18-rescue") (part "DIODE")
+      (footprints
+        (fp "D?")
+        (fp "S*"))
+      (fields
+        (field (name "Reference") "D1")
+        (field (name "Value") "Sctky")
+        (field (name "Footprint") "Diode_SMD:D_SOD-523"))
+      (pins
+        (pin (num "1") (name "A") (type "passive"))
+        (pin (num "2") (name "K") (type "passive"))))
+    (libpart (lib "gswitch18-rescue") (part "R")
+      (footprints
+        (fp "R?")
+        (fp "SM0603")
+        (fp "SM0805")
+        (fp "R?-*")
+        (fp "SM1206"))
+      (fields
+        (field (name "Reference") "R")
+        (field (name "Value") "R"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))
+        (pin (num "2") (name "") (type "passive"))))
+    (libpart (lib "gswitch18-rescue") (part "ZENER")
+      (footprints
+        (fp "D?")
+        (fp "SO*")
+        (fp "SM*"))
+      (fields
+        (field (name "Reference") "D")
+        (field (name "Value") "ZENER"))
+      (pins
+        (pin (num "1") (name "A") (type "passive"))
+        (pin (num "2") (name "K") (type "passive")))))
+  (libraries
+    (library (logical "Connector")
+      (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym"))
+    (library (logical "Connector_Generic")
+      (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector_Generic.kicad_sym"))
+    (library (logical "Device")
+      (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym"))
+    (library (logical "atmega48p")
+      (uri "/Users/bryan/projects/gswitch18/hardware/share/library/atmega48p.lib"))
+    (library (logical "gswitch18-rescue")
+      (uri "/Users/bryan/projects/gswitch18/hardware/gswitch18-rescue.lib")))
+  (nets
+    (net (code "1") (name "+5V")
+      (node (ref "C1") (pin "1") (pintype "passive"))
+      (node (ref "C2") (pin "1") (pintype "passive"))
+      (node (ref "C5") (pin "1") (pintype "passive"))
+      (node (ref "P4") (pin "1") (pinfunction "VBUS") (pintype "power_out"))
+      (node (ref "P5") (pin "2") (pinfunction "2") (pintype "passive"))
+      (node (ref "R3") (pin "1") (pintype "passive"))
+      (node (ref "R7") (pin "1") (pintype "passive"))
+      (node (ref "U1") (pin "18") (pinfunction "AVcc") (pintype "power_in"))
+      (node (ref "U1") (pin "4") (pinfunction "VCC") (pintype "power_in"))
+      (node (ref "U1") (pin "6") (pinfunction "VCC") (pintype "power_in")))
+    (net (code "2") (name "/D+")
+      (node (ref "R6") (pin "1") (pintype "passive"))
+      (node (ref "U1") (pin "32") (pinfunction "PD2/INT0") (pintype "bidirectional")))
+    (net (code "3") (name "/D-")
+      (node (ref "R5") (pin "1") (pintype "passive"))
+      (node (ref "U1") (pin "31") (pinfunction "PD1/TXD") (pintype "bidirectional")))
+    (net (code "4") (name "/MISO")
+      (node (ref "P1") (pin "3") (pinfunction "Pin_3") (pintype "passive"))
+      (node (ref "P5") (pin "1") (pinfunction "1") (pintype "passive"))
+      (node (ref "U1") (pin "16") (pinfunction "PB4/MISO") (pintype "bidirectional")))
+    (net (code "5") (name "/MOSI")
+      (node (ref "P1") (pin "4") (pinfunction "Pin_4") (pintype "passive"))
+      (node (ref "P5") (pin "4") (pinfunction "4") (pintype "passive"))
+      (node (ref "U1") (pin "15") (pinfunction "PB3/MOSI") (pintype "bidirectional")))
+    (net (code "6") (name "/RESET")
+      (node (ref "P5") (pin "5") (pinfunction "5") (pintype "passive"))
+      (node (ref "R7") (pin "2") (pintype "passive"))
+      (node (ref "U1") (pin "29") (pinfunction "PC6/reset/PCINT14") (pintype "bidirectional")))
+    (net (code "7") (name "/SCK")
+      (node (ref "P1") (pin "2") (pinfunction "Pin_2") (pintype "passive"))
+      (node (ref "P5") (pin "3") (pinfunction "3") (pintype "passive"))
+      (node (ref "U1") (pin "17") (pinfunction "PB5(SCK)") (pintype "bidirectional")))
+    (net (code "8") (name "/SW04")
+      (node (ref "P1") (pin "5") (pinfunction "Pin_5") (pintype "passive"))
+      (node (ref "U1") (pin "14") (pinfunction "PB2/ss") (pintype "bidirectional")))
+    (net (code "9") (name "/SW05")
+      (node (ref "P1") (pin "6") (pinfunction "Pin_6") (pintype "passive"))
+      (node (ref "U1") (pin "13") (pinfunction "PB1/PCINT1") (pintype "bidirectional")))
+    (net (code "10") (name "/SW06")
+      (node (ref "P1") (pin "7") (pinfunction "Pin_7") (pintype "passive"))
+      (node (ref "U1") (pin "12") (pinfunction "PB0/PCINT0") (pintype "bidirectional")))
+    (net (code "11") (name "/SW07")
+      (node (ref "P2") (pin "2") (pinfunction "Pin_2") (pintype "passive"))
+      (node (ref "U1") (pin "11") (pinfunction "PD7") (pintype "bidirectional")))
+    (net (code "12") (name "/SW08")
+      (node (ref "P2") (pin "3") (pinfunction "Pin_3") (pintype "passive"))
+      (node (ref "U1") (pin "10") (pinfunction "PD6") (pintype "bidirectional")))
+    (net (code "13") (name "/SW09")
+      (node (ref "P2") (pin "4") (pinfunction "Pin_4") (pintype "passive"))
+      (node (ref "U1") (pin "9") (pinfunction "PD5") (pintype "bidirectional")))
+    (net (code "14") (name "/SW10")
+      (node (ref "P2") (pin "5") (pinfunction "Pin_5") (pintype "passive"))
+      (node (ref "U1") (pin "2") (pinfunction "PD4") (pintype "bidirectional")))
+    (net (code "15") (name "/SW11")
+      (node (ref "P2") (pin "6") (pinfunction "Pin_6") (pintype "passive"))
+      (node (ref "U1") (pin "1") (pinfunction "PD3") (pintype "bidirectional")))
+    (net (code "16") (name "/SW12")
+      (node (ref "P2") (pin "7") (pinfunction "Pin_7") (pintype "passive"))
+      (node (ref "U1") (pin "30") (pinfunction "PD0/RXD") (pintype "bidirectional")))
+    (net (code "17") (name "/SW13")
+      (node (ref "P3") (pin "2") (pinfunction "Pin_2") (pintype "passive"))
+      (node (ref "U1") (pin "28") (pinfunction "PC5") (pintype "bidirectional")))
+    (net (code "18") (name "/SW14")
+      (node (ref "P3") (pin "3") (pinfunction "Pin_3") (pintype "passive"))
+      (node (ref "U1") (pin "27") (pinfunction "PC4") (pintype "bidirectional")))
+    (net (code "19") (name "/SW15")
+      (node (ref "P3") (pin "4") (pinfunction "Pin_4") (pintype "passive"))
+      (node (ref "U1") (pin "26") (pinfunction "PC3") (pintype "bidirectional")))
+    (net (code "20") (name "/SW16")
+      (node (ref "P3") (pin "5") (pinfunction "Pin_5") (pintype "passive"))
+      (node (ref "U1") (pin "25") (pinfunction "PC2") (pintype "bidirectional")))
+    (net (code "21") (name "/SW17")
+      (node (ref "P3") (pin "6") (pinfunction "Pin_6") (pintype "passive"))
+      (node (ref "U1") (pin "24") (pinfunction "PC1") (pintype "bidirectional")))
+    (net (code "22") (name "/SW18")
+      (node (ref "P3") (pin "7") (pinfunction "Pin_7") (pintype "passive"))
+      (node (ref "U1") (pin "23") (pinfunction "PC0") (pintype "bidirectional")))
+    (net (code "23") (name "GND")
+      (node (ref "C1") (pin "2") (pintype "passive"))
+      (node (ref "C2") (pin "2") (pintype "passive"))
+      (node (ref "C3") (pin "2") (pintype "passive"))
+      (node (ref "C4") (pin "2") (pintype "passive"))
+      (node (ref "C5") (pin "2") (pintype "passive"))
+      (node (ref "D1") (pin "1") (pinfunction "A") (pintype "passive"))
+      (node (ref "D2") (pin "1") (pinfunction "A") (pintype "passive"))
+      (node (ref "D3") (pin "1") (pinfunction "A") (pintype "passive"))
+      (node (ref "D4") (pin "1") (pinfunction "A") (pintype "passive"))
+      (node (ref "MH1") (pin "1") (pinfunction "G") (pintype "passive"))
+      (node (ref "MH2") (pin "1") (pinfunction "G") (pintype "passive"))
+      (node (ref "MH3") (pin "1") (pinfunction "G") (pintype "passive"))
+      (node (ref "MH4") (pin "1") (pintype "passive"))
+      (node (ref "P1") (pin "1") (pinfunction "Pin_1") (pintype "passive"))
+      (node (ref "P2") (pin "1") (pinfunction "Pin_1") (pintype "passive"))
+      (node (ref "P3") (pin "1") (pinfunction "Pin_1") (pintype "passive"))
+      (node (ref "P4") (pin "5") (pinfunction "GND") (pintype "power_out"))
+      (node (ref "P5") (pin "6") (pinfunction "6") (pintype "passive"))
+      (node (ref "U1") (pin "21") (pinfunction "GND") (pintype "power_in"))
+      (node (ref "U1") (pin "3") (pinfunction "GND") (pintype "power_in"))
+      (node (ref "U1") (pin "5") (pinfunction "GND") (pintype "power_in"))
+      (node (ref "X1") (pin "2") (pinfunction "2") (pintype "passive"))
+      (node (ref "X1") (pin "4") (pinfunction "4") (pintype "passive")))
+    (net (code "24") (name "Net-(C3-Pad1)")
+      (node (ref "C3") (pin "1") (pintype "passive"))
+      (node (ref "U1") (pin "7") (pinfunction "PB6/XTAL1") (pintype "bidirectional"))
+      (node (ref "X1") (pin "3") (pinfunction "3") (pintype "passive")))
+    (net (code "25") (name "Net-(C4-Pad1)")
+      (node (ref "C4") (pin "1") (pintype "passive"))
+      (node (ref "U1") (pin "8") (pinfunction "PB7/XTAL_2") (pintype "bidirectional"))
+      (node (ref "X1") (pin "1") (pinfunction "1") (pintype "passive")))
+    (net (code "26") (name "Net-(D1-Pad2)")
+      (node (ref "D1") (pin "2") (pinfunction "K") (pintype "passive"))
+      (node (ref "D4") (pin "2") (pinfunction "K") (pintype "passive"))
+      (node (ref "R2") (pin "1") (pintype "passive"))
+      (node (ref "R3") (pin "2") (pintype "passive"))
+      (node (ref "R5") (pin "2") (pintype "passive")))
+    (net (code "27") (name "Net-(D2-Pad2)")
+      (node (ref "D2") (pin "2") (pinfunction "K") (pintype "passive"))
+      (node (ref "D3") (pin "2") (pinfunction "K") (pintype "passive"))
+      (node (ref "R1") (pin "1") (pintype "passive"))
+      (node (ref "R6") (pin "2") (pintype "passive")))
+    (net (code "28") (name "Net-(P4-Pad2)")
+      (node (ref "P4") (pin "2") (pinfunction "D-") (pintype "bidirectional"))
+      (node (ref "R2") (pin "2") (pintype "passive")))
+    (net (code "29") (name "Net-(P4-Pad3)")
+      (node (ref "P4") (pin "3") (pinfunction "D+") (pintype "bidirectional"))
+      (node (ref "R1") (pin "2") (pintype "passive")))
+    (net (code "30") (name "unconnected-(P4-Pad4)")
+      (node (ref "P4") (pin "4") (pinfunction "ID") (pintype "passive+no_connect")))
+    (net (code "31") (name "unconnected-(P4-Pad6)")
+      (node (ref "P4") (pin "6") (pinfunction "Shield") (pintype "passive+no_connect")))
+    (net (code "32") (name "unconnected-(U1-Pad19)")
+      (node (ref "U1") (pin "19") (pinfunction "ADC6") (pintype "bidirectional+no_connect")))
+    (net (code "33") (name "unconnected-(U1-Pad20)")
+      (node (ref "U1") (pin "20") (pinfunction "AREF") (pintype "bidirectional+no_connect")))
+    (net (code "34") (name "unconnected-(U1-Pad22)")
+      (node (ref "U1") (pin "22") (pinfunction "ADC7") (pintype "bidirectional+no_connect")))))
