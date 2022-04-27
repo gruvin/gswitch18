@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/Users/bryan/projects/gswitch18/hardware/gswitch18.kicad_sch</source>
-    <date>Wednesday, 27 April 2022 at 11:35:03 pm</date>
+    <date>Thursday, 28 April 2022 at 07:15:41 am</date>
     <tool>Eeschema (6.0.4-0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -77,7 +77,7 @@
       <tstamps>00000000-0000-0000-0000-00004ecc4b5c</tstamps>
     </comp>
     <comp ref="C5">
-      <value>10u tant.</value>
+      <value>10uF 16V Tantalum</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
         <field name="JLCPCB">C128254</field>
@@ -90,7 +90,7 @@
       <tstamps>a424e5ab-9cfc-4bb8-a430-30011c17f1e2</tstamps>
     </comp>
     <comp ref="D1">
-      <value>Sctky</value>
+      <value>200mA</value>
       <footprint>Diode_SMD:D_SOD-523</footprint>
       <fields>
         <field name="JLCPCB">C122862</field>
@@ -103,7 +103,7 @@
       <tstamps>00000000-0000-0000-0000-00004e912a59</tstamps>
     </comp>
     <comp ref="D2">
-      <value>Sctky</value>
+      <value>200mA</value>
       <footprint>Diode_SMD:D_SOD-523</footprint>
       <fields>
         <field name="JLCPCB">C122862</field>
@@ -116,12 +116,12 @@
       <tstamps>00000000-0000-0000-0000-00004e912a5f</tstamps>
     </comp>
     <comp ref="D3">
-      <value>3V6</value>
+      <value>3V6 500mW</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
         <field name="JLCPCB">C216708</field>
       </fields>
-      <libsource lib="" part="D_Zener_1" description="Zener diode"/>
+      <libsource lib="Device" part="D_Zener" description="Zener diode"/>
       <property name="JLCPCB" value="C216708"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="gswitch18.kicad_sch"/>
@@ -129,7 +129,7 @@
       <tstamps>00000000-0000-0000-0000-00004e912a33</tstamps>
     </comp>
     <comp ref="D4">
-      <value>3V6</value>
+      <value>3V6 500mW</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <fields>
         <field name="JLCPCB">C216708</field>
@@ -318,25 +318,6 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="" part="D_Zener_1">
-      <description>Zener diode</description>
-      <footprints>
-        <fp>TO-???*</fp>
-        <fp>*_Diode_*</fp>
-        <fp>*SingleDiode*</fp>
-        <fp>D_*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D3</field>
-        <field name="Value">D_Zener_1</field>
-        <field name="Footprint">Diode_SMD:D_SOD-123</field>
-        <field name="JLCPCB">C216708</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="Connector" part="Conn_01x06_Female">
       <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
       <docs>~</docs>
@@ -450,6 +431,7 @@
     </libpart>
     <libpart lib="Device" part="D_Schottky">
       <description>Schottky diode</description>
+      <docs>~</docs>
       <footprints>
         <fp>TO-???*</fp>
         <fp>*_Diode_*</fp>
@@ -457,18 +439,18 @@
         <fp>D_*</fp>
       </footprints>
       <fields>
-        <field name="Reference">D1</field>
-        <field name="Value">Sctky</field>
-        <field name="Footprint">Diode_SMD:D_SOD-523</field>
-        <field name="JLCPCB">C122862</field>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="D_Zener">
       <description>Zener diode</description>
+      <docs>~</docs>
       <footprints>
         <fp>TO-???*</fp>
         <fp>*_Diode_*</fp>
@@ -476,14 +458,13 @@
         <fp>D_*</fp>
       </footprints>
       <fields>
-        <field name="Reference">D4</field>
-        <field name="Value">3V6</field>
-        <field name="Footprint">Diode_SMD:D_SOD-123</field>
-        <field name="JLCPCB">C216708</field>
+        <field name="Reference">D</field>
+        <field name="Value">D_Zener</field>
+        <field name="Datasheet">~</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R">
@@ -677,10 +658,10 @@
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
-      <node ref="D1" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
-      <node ref="D3" pin="1" pinfunction="A" pintype="passive"/>
-      <node ref="D4" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="P1" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="P2" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="P3" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -691,36 +672,36 @@
       <node ref="X1" pin="2" pinfunction="2" pintype="passive"/>
       <node ref="X1" pin="4" pinfunction="4" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(P4-Pad2)">
-      <node ref="P4" pin="2" pinfunction="D-" pintype="bidirectional"/>
-      <node ref="R2" pin="2" pintype="passive"/>
-    </net>
-    <net code="25" name="Net-(P4-Pad3)">
-      <node ref="P4" pin="3" pinfunction="D+" pintype="bidirectional"/>
-      <node ref="R1" pin="2" pintype="passive"/>
-    </net>
-    <net code="26" name="Net-(R1-Pad1)">
-      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="D3" pin="2" pinfunction="K" pintype="passive"/>
-      <node ref="R1" pin="1" pintype="passive"/>
-      <node ref="R6" pin="2" pintype="passive"/>
-    </net>
-    <net code="27" name="Net-(R3-Pad2)">
-      <node ref="D1" pin="2" pinfunction="K" pintype="passive"/>
-      <node ref="D4" pin="2" pinfunction="K" pintype="passive"/>
-      <node ref="R2" pin="1" pintype="passive"/>
-      <node ref="R3" pin="2" pintype="passive"/>
-      <node ref="R5" pin="2" pintype="passive"/>
-    </net>
-    <net code="28" name="Net-(U1-Pad7)">
+    <net code="24" name="Net-(C3-Pad1)">
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="PB6/XTAL1" pintype="bidirectional"/>
       <node ref="X1" pin="3" pinfunction="3" pintype="passive"/>
     </net>
-    <net code="29" name="Net-(U1-Pad8)">
+    <net code="25" name="Net-(C4-Pad1)">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="PB7/XTAL_2" pintype="bidirectional"/>
       <node ref="X1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="28" name="Net-(P4-Pad2)">
+      <node ref="P4" pin="2" pinfunction="D-" pintype="bidirectional"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(P4-Pad3)">
+      <node ref="P4" pin="3" pinfunction="D+" pintype="bidirectional"/>
+      <node ref="R1" pin="2" pintype="passive"/>
     </net>
     <net code="30" name="unconnected-(P4-Pad4)">
       <node ref="P4" pin="4" pinfunction="ID" pintype="passive+no_connect"/>
