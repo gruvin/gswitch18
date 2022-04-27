@@ -1374,10 +1374,10 @@
     (pad "mp" smd rect (at 4.4 2.9 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 02357889-852e-4599-96d7-4e52d9377587))
     (pad "mp" smd rect (at -4.4 2.9 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 46b3ea38-ad42-40ab-ab40-a625bfaa7f06))
     (pad "mp" smd rect (at -4.4 -2.6 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8001c074-589e-402c-9fff-bc0ab9bee5fe))
-    (model "${KIPRJMOD}/share/modules/packages3d/usb_b_smd_mini_socket.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Mini-B_Lumberg_2486_01_Horizontal.wrl"
       (offset (xyz 0 0 0))
-      (scale (xyz 0.3739 0.3739 0.3739))
-      (rotate (xyz 0 0 -90))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
     )
   )
 
