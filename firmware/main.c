@@ -15,6 +15,10 @@
 
 #include <util/delay.h>
 
+// use newer pin assignment reversals.
+// comment out this line to use original PCB layout
+#define PCB_VERSION_1_2
+
 #define USBDEV_SHARED_VENDOR    0x16C0  /* VOTI */
 #define USBDEV_SHARED_PRODUCT   0x27DC  /* Obdev's free shared PID for use with Koystick class HID devicesv */
 
@@ -70,6 +74,7 @@ usbMsgLen_t usbFunctionSetup(uchar data[8]) {
     return 0; // by default don't return any data
 }
 
+#ifdef PCB_VERSION_1_2
 static inline uchar reverse(uchar v) {
     // http://graphics.stanford.edu/~seander/bithacks.html#BitReverseObvious
     v = ((v >> 1) & 0x55) | ((v & 0x55) << 1); // swap odd and even bits
@@ -77,6 +82,7 @@ static inline uchar reverse(uchar v) {
     v = (v >> 4) | (v << 4); // swap nibbles 
     return v; 
 }
+#endif
 
 int main() {
   uchar i, tb, tc, td;
@@ -106,11 +112,18 @@ int main() {
 
     if(usbInterruptIsReady()) { // if the interrupt is ready, feed data
 
+#ifdef PCB_VERSION_1_2
       // PCB optimization and sticking GND at the wrong end of the connectors and ... :/ ...
       tb = reverse(PINB) >> 2;
       tc = reverse(PINC) >> 2;
       td = PIND; 
       td = reverse( ((td & 0b11111001) >> 2) | (td & 0x01) );   // squeeze out D-/D+ USB pins PD1 & PD2
+#else
+      tb = PINB;
+      tc = PINC;
+      td = PIND; 
+      td = ((td & 0b11111001) >> 2) | (td & 0x01);   // squeeze out D-/D+ USB pins PD1 & PD2
+#endif
 
       reportBuffer.buttonMask0 = 
           ~(tb & 0b00111111)         // SW 1-6, bits 0-5 
