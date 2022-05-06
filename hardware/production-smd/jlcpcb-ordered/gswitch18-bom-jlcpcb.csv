@@ -4,7 +4,7 @@
 "10uF 16V Tantalum","C5","Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A","C128254"
 "200mA","D1, D2","Diode_SMD:D_SOD-523","C122862"
 "3V6 500mW","D3, D4","Diode_SMD:D_SOD-123","C216708"
-"JST GHS 1.25","P1, P2, P3","Connector_JST:JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical","C519164"
+"JST GHS 1.25","P1, P2, P3","JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal","C495552"
 "USB_B_Mini","P4","Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal","C2681563"
 "27R","R1, R2","Resistor_SMD:R_0603_1608Metric","C137753"
 "3K9","R3","Resistor_SMD:R_0603_1608Metric","C114616"

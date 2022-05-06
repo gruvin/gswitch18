@@ -3,4 +3,8 @@ hardware/gswitch18*-backups/
 *-bak
 *-bkk
 *~
+*.swp
+*.o
+*.elf
+*.hex
 

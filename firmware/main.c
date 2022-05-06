@@ -70,6 +70,14 @@ usbMsgLen_t usbFunctionSetup(uchar data[8]) {
     return 0; // by default don't return any data
 }
 
+static inline uchar reverse(uchar v) {
+    // http://graphics.stanford.edu/~seander/bithacks.html#BitReverseObvious
+    v = ((v >> 1) & 0x55) | ((v & 0x55) << 1); // swap odd and even bits
+    v = ((v >> 2) & 0x33) | ((v & 0x33) << 2); // swap consecutive pairs
+    v = (v >> 4) | (v << 4); // swap nibbles 
+    return v; 
+}
+
 int main() {
   uchar i, tb, tc, td;
 
@@ -93,26 +101,27 @@ int main() {
   sei(); // Enable interrupts after re-enumeration
 
   while(1) {
-    wdt_reset(); // keep the watchdog happy
+    wdt_reset(); // feed the puppy
     usbPoll();
 
     if(usbInterruptIsReady()) { // if the interrupt is ready, feed data
 
-      tb = ~PINB & 0x3f;
-      tc = ~PINC & 0x3f;
-      td = ~PIND & 0xf9;
+      // PCB optimization and sticking GND at the wrong end of the connectors and ... :/ ...
+      tb = reverse(PINB) >> 2;
+      tc = reverse(PINC) >> 2;
+      td = PIND; 
+      td = reverse( ((td & 0b11111001) >> 2) | (td & 0x01) );   // squeeze out D-/D+ USB pins PD1 & PD2
 
       reportBuffer.buttonMask0 = 
-          (tb & 0x3f)         // SW 1-6, bits 0-5 
-        | ((td & 0x01) << 6)  // SW 7, bit 6
-        | ((td & 0x08) << 4); // SW 8, bit 7
+          ~(tb & 0b00111111)         // SW 1-6, bits 0-5 
+        | ~(td & 0b00000011) << 6;   // SW 7-8, bits 6-7
 
       reportBuffer.buttonMask1 = 
-          ((td & 0xf0) >> 4)  // SW 9-12, bits 0-3
-        | ((tc & 0x0f) << 4); // SW 13-16, bits 4-7
+          ~((td & 0b00111100) >> 2)  // SW 9-12, bits 0-3
+        | ~((tc & 0b00001111) << 4); // SW 13-16, bits 4-7
 
       reportBuffer.buttonMask2 = 
-          ((tc & 0x30) >> 4); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)
+          ~((tc & 0b00110000) >> 4); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)
 
       usbSetInterrupt((void *)&reportBuffer, sizeof(reportBuffer));
     }
