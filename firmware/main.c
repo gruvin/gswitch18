@@ -20,7 +20,7 @@
 #define PCB_VERSION_1_2
 
 #define USBDEV_SHARED_VENDOR    0x16C0  /* VOTI */
-#define USBDEV_SHARED_PRODUCT   0x27DC  /* Obdev's free shared PID for use with Koystick class HID devicesv */
+#define USBDEV_SHARED_PRODUCT   0x27DC  /* Obdev's free shared PID for use with Joystick class HID devices */
 
 // USB report descriptor, size must match USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH in usbconfig.h
 PROGMEM const char usbHidReportDescriptor[] = {
