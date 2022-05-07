@@ -1,5 +1,20 @@
+# Apple, bless'em!
 .DS_Store
+
+# Google Drive syncing
+.tmp.driveupload/
+
+# KiCAD
+hardware/gswitch18*-backups/
 *-bak
 *-bkk
-hardware/gswitch18*-backups/
+*~
+
+# vim
+*.swp
+
+# build chain
+*.o
+*.elf
+*.hex
 
