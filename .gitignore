@@ -1,4 +1,8 @@
 .DS_Store
+
+# Google Drive syncing
+.tmp.driveupload/
+
 hardware/gswitch18*-backups/
 *-bak
 *-bkk

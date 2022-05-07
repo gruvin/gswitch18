@@ -7,6 +7,7 @@
  * Copyright: (c) 2008 by OBJECTIVE DEVELOPMENT Software GmbH
  * License: GNU GPL v3 (see License.txt)
  */
+#include <inttypes.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <avr/wdt.h>
@@ -45,15 +46,15 @@ PROGMEM const char usbHidReportDescriptor[] = {
 };
 
 typedef struct{ // USB 1.1 low speed devices limited to max 8 bytes
-    uchar   buttonMask0; // buttons 1 - 8
-    uchar   buttonMask1; // buttons 9 - 16
-    uchar   buttonMask2; // buttons 17 - 18 (plus 6 unused, total 24)
+    uint8_t   buttonMask0; // buttons 1 - 8
+    uint8_t   buttonMask1; // buttons 9 - 16
+    uint8_t   buttonMask2; // buttons 17 - 18 (plus 6 unused, total 24)
 } report_t;
 
 static report_t reportBuffer;
-static uchar    idleRate;   /* repeat rate for keyboards, never used for mice */
+static uint8_t    idleRate;   /* repeat rate for keyboards, never used for mice */
 
-usbMsgLen_t usbFunctionSetup(uchar data[8]) {
+usbMsgLen_t usbFunctionSetup(uint8_t data[8]) {
     usbRequest_t *rq = (void *)data;
 
     // The following requests are never used. But since they are required by
@@ -75,7 +76,7 @@ usbMsgLen_t usbFunctionSetup(uchar data[8]) {
 }
 
 #ifdef PCB_VERSION_1_2
-static inline uchar reverse(uchar v) {
+static inline uint8_t reverse(uint8_t v) {
     // http://graphics.stanford.edu/~seander/bithacks.html#BitReverseObvious
     v = ((v >> 1) & 0x55) | ((v & 0x55) << 1); // swap odd and even bits
     v = ((v >> 2) & 0x33) | ((v & 0x33) << 2); // swap consecutive pairs
@@ -85,7 +86,7 @@ static inline uchar reverse(uchar v) {
 #endif
 
 int main() {
-  uchar i, tb, tc, td;
+  uint8_t i, tb, tc, td;
 
   DDRB = 0x00;  PORTB = 0x3f;
   DDRC = 0x00;  PORTC = 0x3f;
@@ -117,7 +118,7 @@ int main() {
       tb = reverse(PINB) >> 2;
       tc = reverse(PINC) >> 2;
       td = PIND; 
-      td = reverse( ((td & 0b11111001) >> 2) | (td & 0x01) );   // squeeze out D-/D+ USB pins PD1 & PD2
+      td = reverse( ((td & 0b11111000) >> 2) | (td & 0b00000001) ) >> 2;   // squeeze out D-/D+ USB pins PD1 & PD2
 #else
       tb = PINB;
       tc = PINC;
@@ -126,12 +127,16 @@ int main() {
 #endif
 
       reportBuffer.buttonMask0 = 
-          ~(tb & 0b00111111)         // SW 1-6, bits 0-5 
-        | ~(td & 0b00000011) << 6;   // SW 7-8, bits 6-7
+          ~(
+              (tb & 0b00111111)         // SW 1-6, bits 0-5 
+            | ((td & 0b00000011) << 6)  // SW 7-8, bits 6-7
+          );
 
       reportBuffer.buttonMask1 = 
-          ~((td & 0b00111100) >> 2)  // SW 9-12, bits 0-3
-        | ~((tc & 0b00001111) << 4); // SW 13-16, bits 4-7
+          ~(
+              ((td & 0b00111100) >> 2)  // SW 9-12, bits 0-3
+            | ((tc & 0b00001111) << 4)  // SW 13-16, bits 4-7
+          );
 
       reportBuffer.buttonMask2 = 
           ~((tc & 0b00110000) >> 4); // SW 17/18, bits 0-1 (plus 6x 0-padding bits)

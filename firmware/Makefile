@@ -15,6 +15,9 @@ OBJECTS = usbdrv/usbdrv.o usbdrv/oddebug.o usbdrv/usbdrvasm.o main.o
 # By default, build the firmware and command-line client, but do not flash
 all: main.hex $(CMDLINE)
 
+fuse:
+	$(DUDE) $(DUDEFLAGS) -B8 -u -U lfuse:w:0xC7:m -U hfuse:w:0xd5:m -U efuse:w:0xf9:m
+
 # With this, you can flash the firmware by just typing "make flash" on command-line
 flash: main.hex
 	$(DUDE) $(DUDEFLAGS) -U flash:w:$<
