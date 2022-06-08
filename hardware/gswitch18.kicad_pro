@@ -379,8 +379,8 @@
       "idf": "",
       "netlist": "gswitch18.net",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "gswitch18.step",
+      "vrml": "../../../Desktop/gswitch18.wrl"
     },
     "page_layout_descr_file": ""
   },

@@ -225,7 +225,7 @@
       (net 22 "D-") (pinfunction "PD1/TXD") (pintype "bidirectional") (tstamp c35e417c-496e-4303-b5c4-321c3cede22a))
     (pad "32" smd rect (at -2.8 -4.25 270) (size 1.6 0.55) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 32 "D+") (pinfunction "PD2/INT0") (pintype "bidirectional") (tstamp e702a3ea-106a-406d-9f17-c06eda1e35d1))
-    (model "${KICAD6_3DMODEL_DIR}/Package_QFP.3dshapes/TQFP-32_7x7mm_P0.8mm.wrl"
+    (model "${KIPRJMOD}/share/modules/packages3d/TQFP-32_7x7mm_P0.8mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1034,10 +1034,10 @@
       (net 20 "SW18") (pinfunction "Pin_7") (pintype "passive") (tstamp aeeba41f-21f1-411c-816e-2bda876a1c79))
     (pad "MP" smd roundrect (at -5.6 -1.4 180) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 06cccf2c-d0d0-41ad-bc61-a0c3e7cbae93))
     (pad "MP" smd roundrect (at 5.6 -1.4 180) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 51ce9675-eb70-4a97-98fd-269bf17eea73))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.wrl"
+    (model "${KIPRJMOD}/share/modules/packages3d/JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1123,10 +1123,10 @@
       (net 8 "SW06") (pinfunction "Pin_7") (pintype "passive") (tstamp 8ae55606-cfbf-467b-98ad-b305173bd9ee))
     (pad "MP" smd roundrect (at -5.6 -1.4) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 5b176ccc-587a-4308-8c95-991bd5be9b68))
     (pad "MP" smd roundrect (at 5.6 -1.4) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 9da855b0-f953-4d94-ac15-68c62fcf943f))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.wrl"
+    (model "${KIPRJMOD}/share/modules/packages3d/JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1369,7 +1369,7 @@
     (pad "mp" smd rect (at 4.4 2.9 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 02357889-852e-4599-96d7-4e52d9377587))
     (pad "mp" smd rect (at -4.4 2.9 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 46b3ea38-ad42-40ab-ab40-a625bfaa7f06))
     (pad "mp" smd rect (at -4.4 -2.6 270) (size 2 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8001c074-589e-402c-9fff-bc0ab9bee5fe))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Mini-B_Lumberg_2486_01_Horizontal.wrl"
+    (model "${KIPRJMOD}/share/modules/packages3d/USB_Mini-B_Lumberg_2486_01_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1458,10 +1458,10 @@
       (net 14 "SW12") (pinfunction "Pin_7") (pintype "passive") (tstamp dc00fa94-a583-43b2-92cf-d179c920f4b4))
     (pad "MP" smd roundrect (at -5.6 -1.4 270) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 159574a9-ecec-48bb-adb0-3dc9e65d4e79))
     (pad "MP" smd roundrect (at 5.6 -1.4 270) (size 1 2.8) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 82a9a530-e248-4dc9-896c-25f6d73fe113))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_JST.3dshapes/JST_GH_BM07B-GHS-TBT_1x07-1MP_P1.25mm_Vertical.wrl"
+    (model "${KIPRJMOD}/share/modules/packages3d/JST_GH_SM07B-GHS-TB_1x07-1MP_P1.25mm_Horizontal.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
