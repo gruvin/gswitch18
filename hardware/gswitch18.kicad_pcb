@@ -508,7 +508,7 @@
     (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -574,7 +574,7 @@
     (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1215,7 +1215,7 @@
       (net 6 "/RESET") (pinfunction "5") (pintype "passive") (tstamp d0f9fcb8-5e94-4204-9845-16b2f6a7e0fd))
     (pad "6" smd oval (at 2.54 5.08 270) (size 1.7 1.7) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 23 "GND") (pinfunction "6") (pintype "passive") (tstamp 5e74b0cf-956e-485d-b398-0d0d9369fbf1))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1350,7 +1350,7 @@
     (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_MiniMELF.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
@@ -1418,7 +1418,7 @@
     (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_MiniMELF.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 180))
     )
   )
 
