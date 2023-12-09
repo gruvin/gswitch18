@@ -1,7 +1,21 @@
+<<<<<<< HEAD
 G04 (created by PCBNEW (2013-07-24 BZR 4024)-stable) date Sat 25 Jul 2015 09:30:40 AM NZST*
 %MOIN*%
 G04 Gerber Fmt 3.4, Leading zero omitted, Abs format*
 %FSLAX34Y34*%
+=======
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.10)-1*%
+%TF.CreationDate,2021-09-08T17:10:42+12:00*%
+%TF.ProjectId,gswitch18,67737769-7463-4683-9138-2e6b69636164,1.1*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Copper,L2,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.10)-1) date 2021-09-08 17:10:42*
+%MOMM*%
+%LPD*%
+>>>>>>> 2c74685 (Updated to KiCAD 7.0)
 G01*
 G70*
 G90*

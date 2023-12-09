@@ -1,4 +1,9 @@
 (sym_lib_table
+<<<<<<< HEAD
   (lib (name "gswitch18-rescue")(type "Legacy")(uri "${KIPRJMOD}/gswitch18-rescue.lib")(options "")(descr ""))
   (lib (name "atmega48p")(type "Legacy")(uri "${KIPRJMOD}/share/library/atmega48p.lib")(options "")(descr ""))
+=======
+  (version 0)
+  (lib (name "gswitch18-rescue")(type "Legacy")(uri "${KIPRJMOD}/gswitch18-rescue.lib")(options "")(descr ""))
+>>>>>>> 2c74685 (Updated to KiCAD 7.0)
 )
